@@ -1,4 +1,4 @@
-pragma solidity 0.5.9;
+pragma solidity ^0.5.0;
 pragma experimental "ABIEncoderV2";
 
 contract TwoPartyDirectChannel {
@@ -15,28 +15,17 @@ contract TwoPartyDirectChannel {
   }
 
   address payable[2] participants;
-  uint256 finalizesAt;
+  uint256 public finalizesAt;
   State latestState;
 
   bool[2] hasDeposited;
   uint256 finalizePeriod;
-
-  uint256 b;
 
   constructor (
     address payable[2] memory _participants, uint256 _finalizePeriod
   ) public {
     participants = _participants;
     finalizePeriod = _finalizePeriod;
-    b = 1;
-  }
-
-  // function testState(uint256 a) public {
-  //   b = a;
-  // }
-
-  function getB() public view returns (uint256) {
-    return b;
   }
 
   function setState (
@@ -99,6 +88,14 @@ contract TwoPartyDirectChannel {
   }
 
   function startExitFromDeposit() public {
+    require(
+      hasDeposited[0] && hasDeposited[1],
+      "`startExitFromDeposit` should only be called after both deposits are done"
+    );
+    require(
+      msg.sender == participants[0] || msg.sender == participants[1],
+      "Non-participants are banned from calling this `startExitFromDeposit`"
+    );
     if (finalizesAt == 0) {
       finalizesAt = block.number + finalizePeriod;
     }
