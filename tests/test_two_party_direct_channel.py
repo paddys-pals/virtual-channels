@@ -61,7 +61,6 @@ def privkeys(tester):
     return tester.backend.account_keys
 
 
-
 @pytest.fixture
 def deployed_contract(contract_info, w3, accounts):
     abi, bytecode = contract_info
@@ -69,7 +68,9 @@ def deployed_contract(contract_info, w3, accounts):
         abi=abi,
         bytecode=bytecode,
     )
-    tx_hash = C.constructor([accounts[0], accounts[1]], 80640).transact()
+    print(f"!@# {w3.eth.blockNumber}")
+    tx_hash = C.constructor([accounts[0], accounts[1]], 10).transact()
+    print(f"!@# {w3.eth.blockNumber}")
     tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     return w3.eth.contract(
         address=tx_receipt.contractAddress,
@@ -107,6 +108,20 @@ def test_fallback(w3, deployed_contract):
         deployed_contract.fallback.call({
             'from': w3.eth.accounts[1]
         })
+
+
+def test_set_state(w3, tester, deployed_contract, accounts):
+    # deployed_contract.functions.testState({
+    #     "balances": (1, 2),
+    #     "version": 2,
+    # }).call()
+    print(f"!@# {w3.eth.blockNumber}")
+    tester.mine_blocks(num_blocks=1)
+    print(f"!@# {w3.eth.blockNumber}")
+    deployed_contract.functions.getB().call({
+        "from": w3.eth.accounts[1],
+    })
+    pass
 
 
 def test_signing(w3, deployed_contract, privkeys, accounts):
