@@ -19,6 +19,11 @@ Establishing a virtual chain has the following sub components.
   1. Channel A,I<sub>B</sub>
   2. Channel I<sub>B</sub>,C  
 
+  <center>
+  <img src="docs/images/vchain_proc.png">
+  </center>
+  <br></br>
+
 Alice has the following proceedure :
   1. Alice contract Audit
   2. Transfer ether to contract.  
