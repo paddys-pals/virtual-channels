@@ -5,10 +5,14 @@ import os.path
 import subprocess
 
 import eth_tester
+from eth_tester.exceptions import (
+    TransactionFailed,
+)
 
 from web3 import (
     Web3,
 )
+from web3.contract import ConciseContract
 from web3.providers.eth_tester import (
     EthereumTesterProvider,
 )
@@ -72,4 +76,25 @@ def test_deploy_contract(deployed_contract):
     pass
 
 
+def test_fallback(w3, deployed_contract):
+    # Test: try to send from the other accounts
+    with pytest.raises(TransactionFailed):
+        deployed_contract.fallback.call({
+            'from': w3.eth.accounts[2]
+        })
+    # Test: send from accounts passed to the constructor
+    deployed_contract.fallback.call({
+        'from': w3.eth.accounts[0]
+    })
+    deployed_contract.fallback.call({
+        'from': w3.eth.accounts[1]
+    })
 
+    # Test: send twice from the accounts passed to the constructor
+    deployed_contract.fallback.transact({
+        'from': w3.eth.accounts[1]
+    })
+    with pytest.raises(TransactionFailed):
+        deployed_contract.fallback.call({
+            'from': w3.eth.accounts[1]
+        })
