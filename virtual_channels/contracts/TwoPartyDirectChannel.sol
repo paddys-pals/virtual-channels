@@ -21,11 +21,22 @@ contract TwoPartyDirectChannel {
   bool[2] hasDeposited;
   uint256 finalizePeriod;
 
+  uint256 b;
+
   constructor (
     address payable[2] memory _participants, uint256 _finalizePeriod
   ) public {
     participants = _participants;
     finalizePeriod = _finalizePeriod;
+    b = 1;
+  }
+
+  // function testState(uint256 a) public {
+  //   b = a;
+  // }
+
+  function getB() public view returns (uint256) {
+    return b;
   }
 
   function setState (
