@@ -14,21 +14,18 @@ contract TwoPartyDirectChannel {
     bytes32 s;
   }
 
-  function recoverSigner(
-    bytes32 digest, Signature memory sig
-  ) internal pure returns (address) {
-    return ecrecover(digest, sig.v, sig.r, sig.s);
-  }
-
-  bool[2] hasDeposited;
   address payable[2] participants;
   uint256 finalizesAt;
   State latestState;
 
+  bool[2] hasDeposited;
+  uint256 finalizePeriod;
+
   constructor (
-    address payable[2] memory _participants
+    address payable[2] memory _participants, uint256 _finalizePeriod
   ) public {
     participants = _participants;
+    finalizePeriod = _finalizePeriod;
   }
 
   function setState (
@@ -42,6 +39,11 @@ contract TwoPartyDirectChannel {
     5. set latestState to newState
     */
     require(
+      hasDeposited[0] && hasDeposited[1],
+      "`latestState` can be changed only after both sides have deposited"
+    );
+
+    require(
       newState.version > latestState.version,
       "`newState.version` should be larger than `latestState.version`"
     );
@@ -54,9 +56,6 @@ contract TwoPartyDirectChannel {
 
     if (finalizesAt != 0) {
       require(finalizesAt <= block.number, "Has finalized");
-    } else {
-      // 80640 ~= two weeks
-      finalizesAt = block.number + 80640;
     }
     latestState = newState;
   }
@@ -66,7 +65,7 @@ contract TwoPartyDirectChannel {
     1. check that channel is finalized
     2. transfer money based on latestState
     */
-    require(finalizesAt > block.number, "Haven't finalized");
+    require(finalizesAt > block.number, "Hasn't finalized");
     participants[0].transfer(latestState.balances[0]);
     participants[1].transfer(latestState.balances[1]);
   }
@@ -87,4 +86,17 @@ contract TwoPartyDirectChannel {
     latestState.balances[index] = msg.value;
     hasDeposited[index] = true;
   }
+
+  function startExitFromDeposit() public {
+    if (finalizesAt == 0) {
+      finalizesAt = block.number + finalizePeriod;
+    }
+  }
+
+  function recoverSigner(
+    bytes32 digest, Signature memory sig
+  ) internal pure returns (address) {
+    return ecrecover(digest, sig.v, sig.r, sig.s);
+  }
+
 }
