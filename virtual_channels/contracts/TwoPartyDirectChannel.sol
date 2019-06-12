@@ -46,7 +46,6 @@ contract TwoPartyDirectChannel {
       "`newState.version` should be larger than `latestState.version`"
     );
 
-    // TODO: Confirm it is correct
     bytes32 digest = keccak256(abi.encode(newState));
     address address0 = recoverSigner(digest, signatures[0]);
     address address1 = recoverSigner(digest, signatures[1]);
@@ -56,7 +55,7 @@ contract TwoPartyDirectChannel {
     if (finalizesAt != 0) {
       require(finalizesAt <= block.number, "Has finalized");
     } else {
-      // TODO: 80640 ~= two weeks. Confirm if this setting is correct.
+      // 80640 ~= two weeks
       finalizesAt = block.number + 80640;
     }
     latestState = newState;
