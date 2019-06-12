@@ -14,19 +14,28 @@ We define the following four protocols:
 3. Ejections/Evictions
 4. (Un)Cooperative channel closure
 
-
-
 ### Virtual channel establishment
+Establishing a virtual chain has the following sub components.
+  1. Channel A,I<sub>B</sub>
+  2. Channel I<sub>B</sub>,C  
 
-Establishing a virtual channel.
+Alice has the following proceedure :
+  1. Alice contract Audit
+  2. Transfer ether to contract.  
+     - This contract is not yet submitted to on chain
+  3. State submission to contract
 
-  1. Conditional transfer
-  2. Contract audit
-
+Similarily, the proceedure Bob follows:
+  1. Bob contract Audit
+  2. Transfer ether to contract.  
+    - This contract is not yet submitted to on chain
+  3. State submission to contract
 
 
 ### Offchain transactions
 
 ### Ejections/Evictions
+
+
 
 ### (Un)cooperative channel closure
