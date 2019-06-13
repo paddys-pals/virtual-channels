@@ -5,7 +5,6 @@ Consider the following scenario. Alice and Charlie enter into a contract with a 
 
 The result of these agreements creates a virtual chain composed of two virtual channels with actors Alice, Charlie and intermediary Bob.
 
-
 <center>
 <img src="docs/images/overview.png">
 <br></br>
@@ -24,9 +23,9 @@ Establishing a virtual chain has the following sub components.
   1. Channel A,I<sub>B</sub>
   2. Channel I<sub>B</sub>,C  
 
-    <center>
-    <img src="docs/images/vchain_proc.png">
-    </center>
+<center>
+<img src="docs/images/vchain_proc.png">
+</center>
 
 
 The actors Alice, Charlie follow the following procedure :
