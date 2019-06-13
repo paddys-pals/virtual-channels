@@ -52,11 +52,6 @@ def w3(tester):
 
 
 @pytest.fixture
-def accounts(tester):
-    return tester.get_accounts()
-
-
-@pytest.fixture
 def privkeys(tester):
     return tester.backend.account_keys
 
@@ -67,13 +62,13 @@ def finalizePeriod():
 
 
 @pytest.fixture
-def deployed_contract(contract_info, w3, accounts, finalizePeriod):
+def deployed_contract(contract_info, w3, finalizePeriod):
     abi, bytecode = contract_info
     C = w3.eth.contract(
         abi=abi,
         bytecode=bytecode,
     )
-    tx_hash = C.constructor([accounts[0], accounts[1]], finalizePeriod).transact()
+    tx_hash = C.constructor([w3.eth.accounts[0], w3.eth.accounts[1]], finalizePeriod).transact()
     tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     return w3.eth.contract(
         address=tx_receipt.contractAddress,
@@ -185,8 +180,8 @@ def _make_state_digest(w3, balances, version):
     )
 
 
-def _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs):
-    deployed_contract.functions.setStateWithoutStruct(
+def _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs):
+    return deployed_contract.functions.setStateWithoutStruct(
         balances,
         version,
         sigs[0][0],
@@ -195,12 +190,11 @@ def _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs):
         sigs[1][0],
         sigs[1][1],
         sigs[1][2],
-    ).call({
-        'from': w3.eth.accounts[1],
-    })
+    )
 
 
 def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalizePeriod):
+    orig_balances = [8, 7]
     balances = [10, 5]
     version = 1
     digest = _make_state_digest(w3, balances, version)
@@ -211,33 +205,44 @@ def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalize
 
     # Test: `setState` without full deposits from both side
     with pytest.raises(TransactionFailed):
-        _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs)
+        _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).call()
     # deposit 0
     deployed_contract.fallback.transact({
         'from': w3.eth.accounts[0],
-        'value': balances[0],
+        'value': orig_balances[0],
     })
     # the call fails
     with pytest.raises(TransactionFailed):
-        _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs)
+        _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).call()
     # deposit 1
     deployed_contract.fallback.transact({
         'from': w3.eth.accounts[1],
-        'value': balances[1],
+        'value': orig_balances[1],
     })
     # the call succeeds
-    _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs)
+    _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).call()
 
     # Test: `version` is not larger than the latest one, then fails.
     with pytest.raises(TransactionFailed):
-        _call_setStateWithoutStruct(w3, deployed_contract, balances, 0, sigs)
+        _func_setStateWithoutStruct(w3, deployed_contract, balances, 0, sigs).call()
 
     # Test: wrong signatures
     sigs_copied = sigs.copy()
     # `v` set to 5
     sigs_copied[0] = (5, sigs_copied[0][1], sigs_copied[0][2])
     with pytest.raises(TransactionFailed):
-        _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs_copied)
+        _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs_copied).call()
+
+    # Test: change states
+    _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).transact()
+    balances_1 = [6, 9]
+    version_1 = 2
+    digest_1 = _make_state_digest(w3, balances_1, version_1)
+    sigs_1 = [
+        _sign_message_hash(w3, digest_1, privkeys[0]),
+        _sign_message_hash(w3, digest_1, privkeys[1]),
+    ]
+    _func_setStateWithoutStruct(w3, deployed_contract, balances_1, version_1, sigs_1).call()
 
     # Test: fails to call it when the contract has finalized.
     assert 0 == deployed_contract.functions.finalizesAt().call()
@@ -246,9 +251,14 @@ def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalize
     })
     assert 0 != deployed_contract.functions.finalizesAt().call()
     tester.mine_blocks(finalizePeriod + 10)
+    orig_balance_1 = tester.get_balance(w3.eth.accounts[1])
     deployed_contract.functions.finalize().transact()
     with pytest.raises(TransactionFailed):
-        _call_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs)
+        _func_setStateWithoutStruct(w3, deployed_contract, balances_1, version_1, sigs_1).call()
+    now_balance_1 = tester.get_balance(w3.eth.accounts[1])
+    # Only check `balances[1]`, since `balances[0]` is changed after every transaction
+    #   submitted by accounts[0].
+    assert (now_balance_1 - orig_balance_1) == balances[1]
 
 
 # def test_makeDigest(w3, deployed_contract):
