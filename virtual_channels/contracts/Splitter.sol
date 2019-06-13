@@ -2,12 +2,6 @@ pragma solidity >=0.4.22 <0.6.0;
 
 contract Splitter {
 
-  struct Signature {
-    bytes32 r;
-    uint8 v;
-    bytes32 s;
-  }
-  
   address payable participants;
   address payable intermediary; 
   uint256 collateral;
