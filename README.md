@@ -65,11 +65,28 @@ Note: We can define game states here, i.e.
 
 
 #### Cooperative Channel Closure
-In this case, both Alice and Charlie have entered into the channel, both parties exchange a series of states until and a winner chosen - concluding the game. The following protocol defines a cooperative channel closure.
+In this case, both Alice and Charlie have entered into the channel, both parties exchange a series of states and a winner has been finalized. The following protocol defines a cooperative channel closure.
 
-Procedure:   
+Procedure:
+  1. Alice sends a msg containing:  
+    i. Final game state  
+   ii. Game counter   
+  iii. Signature  
+  2. Charlie sends a similar msg containing:  
+    i. Final game state  
+   ii. Game counter  
+  iii. Signature  
+  3. Intermediary, Charlie, compares the information and releases the locked funds.
+  4. Pay amount **a<sup>'</sup><sub>0</sub>** to Alice
+  5. Pay amount **c<sup>'</sup><sub>0</sub>** to Charlie
+  6. Pay amount **b<sup>'</sup><sub>0</sub>** to intermediary Bob
 
-TBD
+  <center>
+  <img src="docs/images/coop_channel_close.png">
+  </center>
+
+
+
 
 #### Uncooperative Channel Closure
 A single party in the channel is stalling the game state and preventing a cooperative closure. The channel closure follows a dispute resolution protocol for an uncooperative party.

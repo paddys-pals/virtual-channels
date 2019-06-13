@@ -1,0 +1,3241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="virtual_channel.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Send"
+       style="overflow:visible;">
+      <path
+         id="path4409"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.3) rotate(180) translate(-2.3,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path4403"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mstart"
+       style="overflow:visible">
+      <path
+         id="path4400"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-5"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4403-4"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-4"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4403-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart-3"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4400-9"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6,0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart-1"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4400-5"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6,0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mend-6"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4403-0"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4258"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4260"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4262"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4264"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker4266"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4268"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(-0.6,-0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Send"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Send-8"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4409-7"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-0.3,0,0,-0.3,0.69,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart-1-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4400-5-4"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6,0.6)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Mstart-1-7"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4400-5-6"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="scale(0.6,0.6)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="37.789982"
+     inkscape:cy="485.59379"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="850"
+     inkscape:window-x="0"
+     inkscape:window-y="21"
+     inkscape:window-maximized="1"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3955" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="opacity:0.97">
+    <g
+       id="g3901"
+       transform="translate(-130,-33.721592)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/overview.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       id="g3888"
+       transform="translate(-130,-35.767765)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/overview.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       id="g3893"
+       transform="translate(-123.79935,-32.232235)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/overview.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="118.59348"
+         x="266.63916"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3"
+         y="142.06908"
+         x="283.96359"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="142.06908"
+           x="283.96359"
+           id="tspan3818-5"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878"
+         y="147.77058"
+         x="291.42899"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="147.77058"
+           x="291.42899"
+           id="tspan3880"
+           sodipodi:role="line">B</tspan></text>
+    </g>
+    <g
+       id="g3965"
+       transform="translate(-263.43401,-105.6929)">
+      <rect
+         ry="0.79545659"
+         y="247.80531"
+         x="349.63647"
+         height="37.821442"
+         width="36.623104"
+         id="rect2985-3-7-2"
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957"
+         d="m 355,254.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959"
+         d="m 355,262.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961"
+         d="m 355,270.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963"
+         d="m 355,277.8368 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 71,106.36218 60,0"
+       id="path3972"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/overview.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 196,106.36218 65,0"
+       id="path3974"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/overview.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <g
+       id="g3965-9"
+       transform="translate(-138.43401,-105.6929)">
+      <rect
+         ry="0.79545659"
+         y="247.80531"
+         x="349.63647"
+         height="37.821442"
+         width="36.623104"
+         id="rect2985-3-7-2-3"
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-6"
+         d="m 355,254.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-0"
+         d="m 355,262.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-6"
+         d="m 355,270.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-2"
+         d="m 355,277.8368 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4021"
+       transform="translate(-204,-46)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4013"
+         y="233.79076"
+         x="324.28571"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           y="233.79076"
+           x="324.28571"
+           id="tspan4015"
+           sodipodi:role="line">AI</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4017"
+         y="237.36218"
+         x="335"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="237.36218"
+           x="335"
+           id="tspan4019"
+           sodipodi:role="line">B</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g4021-6"
+       transform="translate(-79,-46.000004)">
+      <g
+         id="g4082"
+         transform="translate(-6,-1.2857143)">
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="330"
+           y="234.36218"
+           id="text4013-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4015-8"
+             x="330"
+             y="234.36218"
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">I</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="335"
+           y="237.36218"
+           id="text4017-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4019-9"
+             x="335"
+             y="237.36218"
+             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="336.64151"
+           y="234.38249"
+           id="text4013-1-2"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4015-8-0"
+             x="336.64151"
+             y="234.38249"
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">C</tspan></text>
+      </g>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3901-2"
+       transform="translate(229.99657,-32.722972)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-3"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-7"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818-59"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3888-2"
+       transform="translate(229.99657,-34.769142)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6-2"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2-8"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9-9"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3893-7"
+       transform="translate(236.19722,-31.233612)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.86612713"
+         y="118.59348"
+         x="266.63916"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-3"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-6"
+         y="142.06908"
+         x="283.96359"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="142.06908"
+           x="283.96359"
+           id="tspan3818-5-1"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-2"
+         y="147.77058"
+         x="291.42899"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="147.77058"
+           x="291.42899"
+           id="tspan3880-9"
+           sodipodi:role="line">B</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3965-3"
+       transform="translate(96.562553,-90.694272)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.79545659"
+         y="247.80531"
+         x="349.63647"
+         height="37.821442"
+         width="36.623104"
+         id="rect2985-3-7-2-1"
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-9"
+         d="m 355,254.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-4"
+         d="m 355,262.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-7"
+         d="m 355,270.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-8"
+         d="m 355,277.8368 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 430.99657,107.3608 59.99999,0"
+       id="path3972-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 555.99656,107.3608 65,0"
+       id="path3974-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       style="opacity:0.97000002"
+       id="g3965-9-0"
+       transform="translate(221.56257,-90.694272)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.79545659"
+         y="247.80531"
+         x="349.63647"
+         height="37.821442"
+         width="36.623104"
+         id="rect2985-3-7-2-3-3"
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-6-6"
+         d="m 355,254.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-0-1"
+         d="m 355,262.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-6-0"
+         d="m 355,270.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-2-6"
+         d="m 355,277.8368 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g4021-3"
+       transform="translate(155.99656,-31.001382)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4013-2"
+         y="233.79076"
+         x="324.28571"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           y="233.79076"
+           x="324.28571"
+           id="tspan4015-0"
+           sodipodi:role="line">AI</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4017-6"
+         y="237.36218"
+         x="335"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="237.36218"
+           x="335"
+           id="tspan4019-1"
+           sodipodi:role="line">B</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g4021-6-5"
+       transform="translate(280.99657,-31.001382)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <g
+         id="g4082-5"
+         transform="translate(-6,-1.2857143)">
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="330"
+           y="234.36218"
+           id="text4013-1-4"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4015-8-7"
+             x="330"
+             y="234.36218"
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">I</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="335"
+           y="237.36218"
+           id="text4017-7-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4019-9-5"
+             x="335"
+             y="237.36218"
+             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">B</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="336.64151"
+           y="234.38249"
+           id="text4013-1-2-6"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4015-8-0-9"
+             x="336.64151"
+             y="234.38249"
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">C</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
+       d="m 400.34702,135.56297 36.87057,23.73858"
+       id="path4228"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 651.875,139.60358 -34.85027,23.73858"
+       id="path4230"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       style="opacity:0.97000002"
+       id="g3965-3-3"
+       transform="translate(94.018293,-227.11756)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.79545659"
+         y="247.80531"
+         x="349.63647"
+         height="37.821442"
+         width="36.623104"
+         id="rect2985-3-7-2-1-7"
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-9-4"
+         d="m 355,254.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-4-5"
+         d="m 355,262.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-7-2"
+         d="m 355,270.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-8-5"
+         d="m 355,277.8368 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Mstart)"
+       d="M 439.49043,56.51853 404.64016,80.25711"
+       id="path4230-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       style="opacity:0.97000002"
+       id="g3965-3-3-7"
+       transform="translate(222.30767,-226.10741)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.79545659"
+         y="247.80531"
+         x="349.63647"
+         height="37.821442"
+         width="36.623104"
+         id="rect2985-3-7-2-1-7-4"
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-9-4-4"
+         d="m 355,254.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-4-5-3"
+         d="m 355,262.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-7-2-0"
+         d="m 355,270.36218 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-8-5-7"
+         d="m 355,277.8368 25,0"
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(340.30357,-575.20536)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="414.10336"
+       y="63.781197"
+       id="text4318"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320"
+         x="414.10336"
+         y="63.781197"
+         style="font-weight:bold">1</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-8"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(560.70873,-575.87271)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="634.50854"
+       y="63.113853"
+       id="text4318-7"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-0"
+         x="634.50854"
+         y="63.113853"
+         style="font-weight:bold">1</tspan></text>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart)"
+       d="m 612.73158,56.51854 36.87058,23.73858"
+       id="path4228-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-8-1"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(347.40411,-495.74578)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="421.20392"
+       y="143.2408"
+       id="text4318-7-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-0-0"
+         x="421.20392"
+         y="143.2408"
+         style="font-weight:bold">2</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-8-3"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(327.84827,-472.53257)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="401.64807"
+       y="166.45399"
+       id="text4318-7-0"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-0-04"
+         x="401.64807"
+         y="166.45399"
+         style="font-weight:bold">3</tspan></text>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)"
+       d="m 391.19905,146.31776 36.87057,23.73858"
+       id="path4228-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)"
+       d="m 658.9881,149.32581 -34.85027,23.73858"
+       id="path4230-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-8-3-9"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(554.14274,-490.99959)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="627.94257"
+       y="147.98695"
+       id="text4318-7-0-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-0-04-9"
+         x="627.94257"
+         y="147.98695"
+         style="font-weight:bold">2</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-8-3-8"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(570.83056,-467.64425)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="644.63037"
+       y="171.34236"
+       id="text4318-7-0-1"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-0-04-6"
+         x="644.63037"
+         y="171.34236"
+         style="font-weight:bold">3</tspan></text>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart)"
+       d="m 485.76149,56.62288 36.87058,23.73858"
+       id="path4228-5-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-3"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(421.40921,-564.33718)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="495.20898"
+       y="74.649368"
+       id="text4318-4"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-6"
+         x="495.20898"
+         y="74.649368"
+         style="font-weight:bold">1</tspan></text>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Mstart)"
+       d="M 565.46491,56.14022 530.61464,79.8788"
+       id="path4230-4-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path4316-8-17"
+       sodipodi:cx="76.013977"
+       sodipodi:cy="636.68439"
+       sodipodi:rx="4.7982244"
+       sodipodi:ry="5.0507627"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       transform="translate(479.39146,-564.76103)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="553.19122"
+       y="74.22554"
+       id="text4318-7-2"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4320-0-2"
+         x="553.19122"
+         y="74.22554"
+         style="font-weight:bold">1</tspan></text>
+    <g
+       style="opacity:0.97000002"
+       id="g3901-9"
+       transform="translate(-100.358,207.08938)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-28"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-1"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818-2"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3888-4"
+       transform="translate(-116.86308,205.04321)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6-7"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2-86"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9-3"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 98.642,347.17316 60,0"
+       id="path3972-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 213.13692,347.17316 65,0"
+       id="path3974-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       style="opacity:0.97000002"
+       id="g3901-9-8"
+       transform="translate(-115.97159,602.11711)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-28-1"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-1-3"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818-2-6"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3888-4-4"
+       transform="translate(-73.97159,600.07094)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6-7-0"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2-86-3"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9-3-5"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       id="g6269"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110"
+       transform="translate(-32,178)">
+      <rect
+         ry="0.86612713"
+         y="544.19995"
+         x="136.86824"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5"
+         y="567.67554"
+         x="154.19266"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.67554"
+           x="154.19266"
+           id="tspan3818-5-7-0"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9"
+         y="573.37708"
+         x="161.65805"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.37708"
+           x="161.65805"
+           id="tspan3880-3-9"
+           sodipodi:role="line">i</tspan></text>
+    </g>
+    <g
+       id="g6262"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110"
+       transform="translate(-32,178)">
+      <rect
+         ry="0.86612713"
+         y="544.05713"
+         x="210.72537"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-2"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-4"
+         y="567.53271"
+         x="228.04979"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.53271"
+           x="228.04979"
+           id="tspan3818-5-7-0-9"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-0"
+         y="573.23425"
+         x="235.51518"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.23425"
+           x="235.51518"
+           id="tspan3880-3-9-1"
+           sodipodi:role="line">j</tspan></text>
+    </g>
+    <g
+       id="g6255"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110"
+       transform="translate(-32,178)">
+      <rect
+         ry="0.86612713"
+         y="544.05713"
+         x="283.43967"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-20"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-0"
+         y="567.53271"
+         x="300.76407"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.53271"
+           x="300.76407"
+           id="tspan3818-5-7-0-6"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-3"
+         y="573.23425"
+         x="308.22946"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.23425"
+           x="308.22946"
+           id="tspan3880-3-9-9"
+           sodipodi:role="line">k</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="221.85475"
+       y="520.13806"
+       id="text5937"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5939"
+         x="221.85475"
+         y="520.13806" /></text>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 227.66026,742.07647 20.82234,0"
+       id="path3972-7-8-3-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 153.73169,742.07647 20.82234,0"
+       id="path3972-7-8-3-1-0"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <g
+       id="g6085"
+       transform="translate(32.612219,-55.321429)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_1.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         ry="0.86612713"
+         y="382.48566"
+         x="130.2968"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-20-0"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-0-5"
+         y="405.96127"
+         x="147.6212"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="405.96127"
+           x="147.6212"
+           id="tspan3818-5-7-0-6-0"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-3-3"
+         y="411.66281"
+         x="155.08659"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="411.66281"
+           x="155.08659"
+           id="tspan3880-3-9-9-1"
+           sodipodi:role="line">k</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3901-9-80"
+       transform="translate(262.42885,209.63651)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-28-17"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-1-9"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818-2-1"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3888-4-0"
+       transform="translate(248.42885,207.59034)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6-7-3"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2-86-5"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9-3-9"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 461.42885,349.72029 60,0"
+       id="path3972-7-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 576.42885,349.72029 65,0"
+       id="path3974-6-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <g
+       style="opacity:0.97000002"
+       id="g6085-4"
+       transform="translate(394.89399,-52.774287)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="382.48566"
+         x="130.2968"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-20-0-6"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-0-5-9"
+         y="405.96127"
+         x="147.6212"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="405.96127"
+           x="147.6212"
+           id="tspan3818-5-7-0-6-0-2"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-3-3-9"
+         y="411.66281"
+         x="155.08659"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="411.66281"
+           x="155.08659"
+           id="tspan3880-3-9-9-1-0"
+           sodipodi:role="line">k</tspan></text>
+    </g>
+    <rect
+       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.41732283;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.41732283,2.83464567;stroke-dashoffset:0"
+       id="rect6155"
+       width="66.670067"
+       height="57.578693"
+       x="514.16766"
+       y="322.02188"
+       ry="0.86612713"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/single_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 80.73169,742.36218 20.82234,0"
+       id="path3972-7-8-3-1-0-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 300.60567,741.99252 20.82234,0"
+       id="path3972-7-8-3-1-0-9-2"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <g
+       style="opacity:0.97000002"
+       id="g3901-9-8-4"
+       transform="translate(-114.25397,699.39691)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-28-1-4"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-1-3-4"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818-2-6-9"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3888-4-4-9"
+       transform="translate(-72.253974,697.35074)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6-7-0-3"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2-86-3-8"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9-3-5-3"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       transform="translate(-30.282383,275.2798)"
+       style="opacity:0.97000002"
+       id="g6269-2"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="544.19995"
+         x="136.86824"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-95"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-43"
+         y="567.67554"
+         x="154.19266"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.67554"
+           x="154.19266"
+           id="tspan3818-5-7-0-949"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-5"
+         y="573.37708"
+         x="161.65805"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.37708"
+           x="161.65805"
+           id="tspan3880-3-9-5"
+           sodipodi:role="line">i</tspan></text>
+    </g>
+    <g
+       transform="translate(-30.282383,275.2798)"
+       style="opacity:0.97000002"
+       id="g6262-7"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="544.05713"
+         x="210.72537"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-2-3"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-4-90"
+         y="567.53271"
+         x="228.04979"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.53271"
+           x="228.04979"
+           id="tspan3818-5-7-0-9-7"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-0-2"
+         y="573.23425"
+         x="235.51518"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.23425"
+           x="235.51518"
+           id="tspan3880-3-9-1-7"
+           sodipodi:role="line">j</tspan></text>
+    </g>
+    <g
+       transform="translate(-30.282383,275.2798)"
+       style="opacity:0.97000002"
+       id="g6255-2"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="544.05713"
+         x="283.43967"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-20-9"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-0-0"
+         y="567.53271"
+         x="300.76407"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.53271"
+           x="300.76407"
+           id="tspan3818-5-7-0-6-5"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-3-0"
+         y="573.23425"
+         x="308.22946"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.23425"
+           x="308.22946"
+           id="tspan3880-3-9-9-4"
+           sodipodi:role="line">k</tspan></text>
+    </g>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 229.37787,839.35627 20.82234,0"
+       id="path3972-7-8-3-1-1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 155.4493,839.35627 20.82234,0"
+       id="path3972-7-8-3-1-0-7"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 82.4493,839.64198 20.82234,0"
+       id="path3972-7-8-3-1-0-9-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 302.32328,839.27232 20.82234,0"
+       id="path3972-7-8-3-1-0-9-2-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <rect
+       style="opacity:0.97000002;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.3651861;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.36518604, 2.73037208;stroke-dashoffset:0"
+       id="rect6253-6"
+       width="213.19434"
+       height="61.67144"
+       x="96.489197"
+       y="808.37665"
+       ry="0.82622588"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_2.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <g
+       id="g6790"
+       transform="translate(-32,187.12174)">
+      <rect
+         ry="0.79669303"
+         y="800.90442"
+         x="112.48392"
+         height="37.88023"
+         width="33.467609"
+         id="rect2985-3-7-2-1-1"
+         style="opacity:0.97000002;fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.29868865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-9-2"
+         d="m 115.87684,807.49068 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-4-53"
+         d="m 115.87684,815.49068 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-7-9"
+         d="m 115.87684,823.49068 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-8-1"
+         d="m 115.87684,830.9653 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="110.59656"
+       y="1036.8713"
+       id="text4013-2-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4015-0-7"
+         x="110.59656"
+         y="1036.8713"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">AI</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="120.9537"
+       y="1040.0454"
+       id="text4017-6-0"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4019-1-5"
+         x="120.9537"
+         y="1040.0454"
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">i</tspan></text>
+    <g
+       style="opacity:0.97000002"
+       id="g3901-9-8-2"
+       transform="translate(-115.18587,799.40281)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="120.08284"
+         x="147.72064"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-28-1-7"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-1-3-9"
+         y="144.56859"
+         x="167.06541"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="144.56859"
+           x="167.06541"
+           id="tspan3818-2-6-1"
+           sodipodi:role="line">A</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g3888-4-4-96"
+       transform="translate(-73.185869,797.35664)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="122.12901"
+         x="397.95898"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-6-7-0-36"
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-2-86-3-84"
+         y="147.11984"
+         x="417.30377"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="147.11984"
+           x="417.30377"
+           id="tspan3818-9-3-5-6"
+           sodipodi:role="line">C</tspan></text>
+    </g>
+    <g
+       transform="translate(-31.214278,375.2857)"
+       style="opacity:0.97000002"
+       id="g6269-6"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="544.19995"
+         x="136.86824"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-7"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-2"
+         y="567.67554"
+         x="154.19266"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.67554"
+           x="154.19266"
+           id="tspan3818-5-7-0-7"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-4"
+         y="573.37708"
+         x="161.65805"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.37708"
+           x="161.65805"
+           id="tspan3880-3-9-10"
+           sodipodi:role="line">i</tspan></text>
+    </g>
+    <g
+       transform="translate(-31.214278,375.2857)"
+       style="opacity:0.97000002"
+       id="g6262-0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="544.05713"
+         x="210.72537"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-2-6"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-4-4"
+         y="567.53271"
+         x="228.04979"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.53271"
+           x="228.04979"
+           id="tspan3818-5-7-0-9-4"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-0-3"
+         y="573.23425"
+         x="235.51518"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.23425"
+           x="235.51518"
+           id="tspan3880-3-9-1-73"
+           sodipodi:role="line">j</tspan></text>
+    </g>
+    <g
+       transform="translate(-31.214278,375.2857)"
+       style="opacity:0.97000002"
+       id="g6255-4"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110">
+      <rect
+         ry="0.86612713"
+         y="544.05713"
+         x="283.43967"
+         height="41.181602"
+         width="46.549255"
+         id="rect2985-3-7-5-2-8-20-7"
+         style="opacity:0.97000002;fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <text
+         sodipodi:linespacing="1000%"
+         id="text3816-3-3-5-0-2"
+         y="567.53271"
+         x="300.76407"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="567.53271"
+           x="300.76407"
+           id="tspan3818-5-7-0-6-1"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text3878-25-9-3-7"
+         y="573.23425"
+         x="308.22946"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="573.23425"
+           x="308.22946"
+           id="tspan3880-3-9-9-9"
+           sodipodi:role="line">k</tspan></text>
+    </g>
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 228.44598,939.36217 20.82234,0"
+       id="path3972-7-8-3-1-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 154.51741,939.36217 20.82234,0"
+       id="path3972-7-8-3-1-0-6"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 81.51741,939.64788 20.82234,0"
+       id="path3972-7-8-3-1-0-9-8"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.0629921;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 301.39139,939.27822 20.82234,0"
+       id="path3972-7-8-3-1-0-9-2-9"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/multi_party_ejection_1.png"
+       inkscape:export-xdpi="110"
+       inkscape:export-ydpi="110" />
+    <g
+       id="g6797"
+       transform="translate(-32,186.94974)">
+      <g
+         transform="translate(12,-6)"
+         id="g6733">
+        <rect
+           style="opacity:0.97000002;fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.29868865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect2985-3-7-2-1-1-5"
+           width="33.467609"
+           height="37.88023"
+           x="168.20461"
+           y="807.07642"
+           ry="0.79669303" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,813.66266 25,0"
+           id="path3957-9-2-5"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,821.66266 25,0"
+           id="path3959-4-53-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,829.66266 25,0"
+           id="path3961-7-9-1"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,837.13728 25,0"
+           id="path3963-8-1-5"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g6813"
+       transform="translate(-22.403551,176.65659)">
+      <rect
+         ry="0.79669303"
+         y="811.36957"
+         x="318.20337"
+         height="37.88023"
+         width="33.467609"
+         id="rect2985-3-7-2-1-1-6"
+         style="opacity:0.97000002;fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.29868865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3957-9-2-8"
+         d="m 321.59631,817.95581 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3959-4-53-20"
+         d="m 321.59631,825.95581 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3961-7-9-6"
+         d="m 321.59631,833.95581 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path3963-8-1-4"
+         d="m 321.59631,841.43043 25,0"
+         style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g6880"
+       transform="translate(-34.321429,178.79148)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4013-2-8-9"
+         y="855.44019"
+         x="211.96573"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           y="855.44019"
+           x="211.96573"
+           id="tspan4015-0-7-9"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4017-6-0-1"
+         y="859.39111"
+         x="215.78717"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="859.39111"
+           x="215.78717"
+           id="tspan4019-1-5-6"
+           sodipodi:role="line">i</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4013-2-8-9-0"
+         y="855.47174"
+         x="218.95641"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           y="855.47174"
+           x="218.95641"
+           id="tspan4015-0-7-9-4"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4017-6-0-1-8"
+         y="859.48962"
+         x="223.6707"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="859.48962"
+           x="223.6707"
+           id="tspan4019-1-5-6-5"
+           sodipodi:role="line">j</tspan></text>
+    </g>
+    <g
+       id="g6805"
+       transform="translate(-32,184.87826)">
+      <g
+         id="g6733-1"
+         style="opacity:0.97000002"
+         transform="translate(86.244387,-3.9285186)">
+        <rect
+           style="opacity:0.97000002;fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.29868865;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect2985-3-7-2-1-1-5-2"
+           width="33.467609"
+           height="37.88023"
+           x="168.20461"
+           y="807.07642"
+           ry="0.79669303" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,813.66266 25,0"
+           id="path3957-9-2-5-9"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,821.66266 25,0"
+           id="path3959-4-53-2-7"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,829.66266 25,0"
+           id="path3961-7-9-1-3"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 171.59753,837.13728 25,0"
+           id="path3963-8-1-5-8"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+    <g
+       id="g6890"
+       transform="translate(-19.373093,164.77256)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4013-2-8-9-1"
+         y="869.50836"
+         x="270.60706"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           y="869.50836"
+           x="270.60706"
+           id="tspan4015-0-7-9-2"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4017-6-0-1-6"
+         y="873.45929"
+         x="274.4285"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="873.45929"
+           x="274.4285"
+           id="tspan4019-1-5-6-4"
+           sodipodi:role="line">j</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4013-2-8-9-0-8"
+         y="869.53992"
+         x="277.59772"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           y="869.53992"
+           x="277.59772"
+           id="tspan4015-0-7-9-4-5"
+           sodipodi:role="line">I</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4017-6-0-1-8-6"
+         y="873.5578"
+         x="282.31201"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+           y="873.5578"
+           x="282.31201"
+           id="tspan4019-1-5-6-5-2"
+           sodipodi:role="line">k</tspan></text>
+    </g>
+    <g
+       style="opacity:0.97000002"
+       id="g6890-5"
+       transform="translate(53.811908,165.38756)">
+      <g
+         id="g6942">
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="270.60706"
+           y="869.50836"
+           id="text4013-2-8-9-1-2"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4015-0-7-9-2-6"
+             x="270.60706"
+             y="869.50836"
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">I</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="274.4285"
+           y="873.45929"
+           id="text4017-6-0-1-6-9"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4019-1-5-6-4-1"
+             x="274.4285"
+             y="873.45929"
+             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">k</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           x="277.59772"
+           y="869.53992"
+           id="text4013-2-8-9-0-8-3"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4015-0-7-9-4-5-3"
+             x="277.59772"
+             y="869.53992"
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">B</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Send)"
+       d="M 60.142857,965.36218 84.07143,982.1479"
+       id="path6950"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:none;marker-end:url(#Arrow2Send)"
+       d="m 128.1569,965.42971 23.92858,16.78572"
+       id="path6950-2"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Send)"
+       d="m 201.99387,965.30492 23.92858,16.78572"
+       id="path6950-2-6"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Send)"
+       d="M 275.75532,965.39058 299.6839,982.1763"
+       id="path6950-2-9"
+       inkscape:connector-curvature="0" />
+    <g
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(-111.54301,346.17849)"
+       id="g3901-2-6"
+       style="opacity:0.94090002">
+      <rect
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-3-2"
+         width="46.549255"
+         height="41.181602"
+         x="147.72064"
+         y="120.08284"
+         ry="0.86612713" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         x="167.06541"
+         y="144.56859"
+         id="text3816-7-6"
+         sodipodi:linespacing="1000%"><tspan
+           sodipodi:role="line"
+           id="tspan3818-59-1"
+           x="167.06541"
+           y="144.56859"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">A</tspan></text>
+    </g>
+    <g
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(-97.54301,344.13232)"
+       id="g3888-2-8"
+       style="opacity:0.94090002">
+      <rect
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-6-2-7"
+         width="46.549255"
+         height="41.181602"
+         x="397.95898"
+         y="122.12901"
+         ry="0.86612713" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         x="417.30377"
+         y="147.11984"
+         id="text3816-2-8-9"
+         sodipodi:linespacing="1000%"><tspan
+           sodipodi:role="line"
+           id="tspan3818-9-9-2"
+           x="417.30377"
+           y="147.11984"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">C</tspan></text>
+    </g>
+    <g
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(-101.34236,347.66785)"
+       id="g3893-7-0"
+       style="opacity:0.94090002">
+      <rect
+         style="fill:#969391;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.02702522;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-5-3-2"
+         width="46.549255"
+         height="41.181602"
+         x="266.63916"
+         y="118.59348"
+         ry="0.86612713" />
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         x="283.96359"
+         y="142.06908"
+         id="text3816-3-6-3"
+         sodipodi:linespacing="1000%"><tspan
+           sodipodi:role="line"
+           id="tspan3818-5-1-7"
+           x="283.96359"
+           y="142.06908"
+           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:1000%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">I</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         x="291.42899"
+         y="147.77058"
+         id="text3878-2-5"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3880-9-9"
+           x="291.42899"
+           y="147.77058"
+           style="font-weight:bold">B</tspan></text>
+    </g>
+    <g
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(-230.97703,286.20719)"
+       id="g3965-3-2"
+       style="opacity:0.94090002">
+      <rect
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-2-1-2"
+         width="36.623104"
+         height="37.821442"
+         x="349.63647"
+         y="247.80531"
+         ry="0.79545659" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,254.36218 25,0"
+         id="path3957-9-8"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,262.36218 25,0"
+         id="path3959-4-9"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,270.36218 25,0"
+         id="path3961-7-7"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,277.8368 25,0"
+         id="path3963-8-3"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:connector-curvature="0"
+       id="path3972-4-6"
+       d="m 89.45699,486.26227 59.99999,0"
+       style="opacity:0.94090002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:connector-curvature="0"
+       id="path3974-5-1"
+       d="m 226.45698,486.26227 65,0"
+       style="opacity:0.94090002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <g
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(-128.90558,286.29648)"
+       id="g3965-9-0-2"
+       style="opacity:0.94090002">
+      <rect
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-2-3-3-9"
+         width="36.623104"
+         height="37.821442"
+         x="349.63647"
+         y="247.80531"
+         ry="0.79545659" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,254.36218 25,0"
+         id="path3957-6-6-3"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,262.36218 25,0"
+         id="path3959-0-1-1"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,270.36218 25,0"
+         id="path3961-6-0-9"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,277.8368 25,0"
+         id="path3963-2-6-4"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:connector-curvature="0"
+       id="path4228-55"
+       d="m 84.80744,504.46443 36.87057,23.73859"
+       style="opacity:0.94090002;fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:connector-curvature="0"
+       id="path4230-47"
+       d="m 288.33542,506.50505 -34.85027,23.73857"
+       style="opacity:0.94090002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)" />
+    <g
+       id="g4580"
+       transform="translate(-8,2)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.42903562;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4316-8-1-6"
+         sodipodi:cx="76.013977"
+         sodipodi:cy="636.68439"
+         sodipodi:rx="4.7982244"
+         sodipodi:ry="5.0507627"
+         d="m 80.812201,636.68439 c 0,2.78946 -2.148238,5.05076 -4.798224,5.05076 -2.649986,0 -4.798224,-2.2613 -4.798224,-5.05076 0,-2.78946 2.148238,-5.05077 4.798224,-5.05077 2.649986,0 4.798224,2.26131 4.798224,5.05077 z"
+         transform="translate(5.86453,-116.84432)"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240" />
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.94090002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         x="79.664337"
+         y="522.14227"
+         id="text4318-7-1-5"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240"><tspan
+           sodipodi:role="line"
+           id="tspan4320-0-0-6"
+           x="79.664337"
+           y="522.14227"
+           style="font-weight:bold">2</tspan></text>
+    </g>
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:connector-curvature="0"
+       id="path4228-2-5"
+       d="m 76.016613,512.1478 36.870567,23.73857"
+       style="opacity:0.94090002;fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Mend)" />
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:connector-curvature="0"
+       id="path4230-9-2"
+       d="m 297.44852,512.22728 -34.85027,23.73857"
+       style="opacity:0.94090002;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Mend)" />
+    <g
+       id="g4559"
+       transform="translate(14,-4)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.42903562;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4316-8-3-9-5"
+         sodipodi:cx="76.013977"
+         sodipodi:cy="636.68439"
+         sodipodi:rx="4.7982244"
+         sodipodi:ry="5.0507627"
+         d="m 80.812201,636.68439 c 0,2.78946 -2.148238,5.05076 -4.798224,5.05076 -2.649986,0 -4.798224,-2.2613 -4.798224,-5.05076 0,-2.78946 2.148238,-5.05077 4.798224,-5.05077 2.649986,0 4.798224,2.26131 4.798224,5.05077 z"
+         transform="translate(212.60316,-112.09813)"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240" />
+      <text
+         xml:space="preserve"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.94090002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         x="286.40298"
+         y="526.88843"
+         id="text4318-7-0-4-4"
+         sodipodi:linespacing="125%"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240"><tspan
+           sodipodi:role="line"
+           id="tspan4320-0-04-9-7"
+           x="286.40298"
+           y="526.88843"
+           style="font-weight:bold">2</tspan></text>
+    </g>
+    <g
+       id="g4573"
+       transform="translate(-26,-26)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         inkscape:export-ydpi="240"
+         inkscape:export-xdpi="240"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         transform="translate(43.986022,-110.75077)"
+         d="m 80.812201,636.68439 c 0,2.78946 -2.148238,5.05076 -4.798224,5.05076 -2.649986,0 -4.798224,-2.2613 -4.798224,-5.05076 0,-2.78946 2.148238,-5.05077 4.798224,-5.05077 2.649986,0 4.798224,2.26131 4.798224,5.05077 z"
+         sodipodi:ry="5.0507627"
+         sodipodi:rx="4.7982244"
+         sodipodi:cy="636.68439"
+         sodipodi:cx="76.013977"
+         id="path4316-0"
+         style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <g
+         id="g4568">
+        <g
+           id="g4564">
+          <text
+             inkscape:export-ydpi="240"
+             inkscape:export-xdpi="240"
+             inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+             sodipodi:linespacing="125%"
+             id="text4318-78"
+             y="528.23578"
+             x="117.78581"
+             style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             xml:space="preserve"><tspan
+               style="font-weight:bold"
+               y="528.23578"
+               x="117.78581"
+               id="tspan4320-68"
+               sodipodi:role="line">1</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g4554"
+       transform="translate(-77.714285,-28.285714)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         inkscape:export-ydpi="240"
+         inkscape:export-xdpi="240"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         transform="translate(282.55745,-105.75077)"
+         d="m 80.812201,636.68439 c 0,2.78946 -2.148238,5.05076 -4.798224,5.05076 -2.649986,0 -4.798224,-2.2613 -4.798224,-5.05076 0,-2.78946 2.148238,-5.05077 4.798224,-5.05077 2.649986,0 4.798224,2.26131 4.798224,5.05077 z"
+         sodipodi:ry="5.0507627"
+         sodipodi:rx="4.7982244"
+         sodipodi:cy="636.68439"
+         sodipodi:cx="76.013977"
+         id="path4316-84"
+         style="opacity:0.44230472;color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+      <text
+         inkscape:export-ydpi="240"
+         inkscape:export-xdpi="240"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         sodipodi:linespacing="125%"
+         id="text4318-3"
+         y="533.23578"
+         x="356.35724"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         xml:space="preserve"><tspan
+           style="font-weight:bold"
+           y="533.23578"
+           x="356.35724"
+           id="tspan4320-1"
+           sodipodi:role="line">1</tspan></text>
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4017-7-6-2-4"
+       y="637.25281"
+       x="205.19632"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.94090002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       xml:space="preserve"><tspan
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+         y="637.25281"
+         x="205.19632"
+         id="tspan4019-9-5-0-9"
+         sodipodi:role="line" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.09287632;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.09287637, 1.09287637;stroke-dashoffset:0;marker-end:url(#Arrow2Send)"
+       d="m 141.74852,574.78861 0,12.52142 22.26028,0 0,0"
+       id="path4670"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <path
+       style="opacity:0.97000002;fill:none;stroke:#000000;stroke-width:1.09287632;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:1.09287637, 1.09287637;stroke-dashoffset:0;marker-end:url(#Arrow2Send-8)"
+       d="m 235.10293,574.83186 0,12.52459 -21.89384,0 -0.0999,0.002"
+       id="path4670-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(-179.98123,371.20812)"
+       id="g3965-9-0-2-4-7"
+       style="opacity:0.94090002">
+      <rect
+         style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-2-3-3-9-9-2"
+         width="36.623104"
+         height="37.821442"
+         x="349.63647"
+         y="247.80531"
+         ry="0.79545659" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,254.36218 25,0"
+         id="path3957-6-6-3-2-7"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,262.36218 25,0"
+         id="path3959-0-1-1-0-2"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,270.36218 25,0"
+         id="path3961-6-0-9-6-2"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 355,277.8368 25,0"
+         id="path3963-2-6-4-8-6"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4013-2-84-9"
+       y="667.84979"
+       x="156.86906"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.94090002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       xml:space="preserve"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+         y="667.84979"
+         x="156.86906"
+         id="tspan4015-0-5-4"
+         sodipodi:role="line">Splitter.sol</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4017-6-03-9"
+       y="698.91425"
+       x="204.45293"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.94090002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       xml:space="preserve"><tspan
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+         y="698.91425"
+         x="204.45293"
+         id="tspan4019-1-6-0"
+         sodipodi:role="line" /></text>
+    <rect
+       style="opacity:0.94090002;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.70866144;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect6755-9"
+       width="13.811487"
+       height="10.329344"
+       x="241.59425"
+       y="560.14392"
+       ry="0.86380243"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       style="opacity:0.97000002"
+       id="g6745"
+       transform="translate(-64.803555,-8.4821184)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <g
+         style="opacity:0.94090002"
+         id="g4021-6-5-1"
+         transform="translate(-17.017972,341.89063)"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240">
+        <g
+           id="g4082-5-0"
+           transform="translate(-6,-1.2857143)">
+          <text
+             xml:space="preserve"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             x="330"
+             y="234.36218"
+             id="text4013-1-4-6"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan4015-8-7-3"
+               x="330"
+               y="234.36218"
+               style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">I</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             x="335"
+             y="237.36218"
+             id="text4017-7-6-2"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan4019-9-5-0"
+               x="335"
+               y="237.36218"
+               style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold">B</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.97000002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             x="336.64151"
+             y="234.38249"
+             id="text4013-1-2-6-6"
+             sodipodi:linespacing="125%"><tspan
+               sodipodi:role="line"
+               id="tspan4015-8-0-9-1"
+               x="336.64151"
+               y="234.38249"
+               style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">C</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g7088"
+       transform="translate(-157.54319,-12.12183)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         ry="0.86074471"
+         y="571.50153"
+         x="294.89825"
+         height="10.29278"
+         width="15.54269"
+         id="rect6755"
+         style="opacity:0.94090002;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65688366;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+      <g
+         style="opacity:0.94090002"
+         id="g4021-3-7"
+         transform="translate(-28.554004,343.67512)"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240">
+        <text
+           sodipodi:linespacing="125%"
+           id="text4013-2-84"
+           y="233.79076"
+           x="324.28571"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           xml:space="preserve"><tspan
+             style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             y="233.79076"
+             x="324.28571"
+             id="tspan4015-0-5"
+             sodipodi:role="line">AI</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text4017-6-03"
+           y="237.36218"
+           x="335"
+           style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+           xml:space="preserve"><tspan
+             style="font-size:6px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L Bold"
+             y="237.36218"
+             x="335"
+             id="tspan4019-1-6"
+             sodipodi:role="line">B</tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.18619859;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Send-8)"
+       d="m 176.06505,595.41677 0,19.4908"
+       id="path7252"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       id="g8322"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7479"
+         d="m 54.285714,524.50504 0,122.5"
+         style="fill:none;stroke:#800000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Mstart-1)" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path7510"
+         d="m 53.916892,646.47026 110.106628,0"
+         style="fill:none;stroke:#800000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g8318"
+       style="stroke:#800000;stroke-opacity:1"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7479-7"
+         d="m 319.73178,524.1759 0,122.5"
+         style="opacity:0.97000001999999996;fill:none;stroke:#800000;stroke-width:0.99921260000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow2Mstart-1);stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path7510-6"
+         d="m 209.6244,646.28086 110.10663,0"
+         style="opacity:0.97000001999999996;fill:none;stroke:#800000;stroke-width:0.99921260000000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <g
+       id="g8803"
+       transform="translate(5.3571424,-2.8571428)"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.97000002;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:0.54222221;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         id="path4316-8-3-9-5-3-6"
+         sodipodi:cx="76.013977"
+         sodipodi:cy="636.68439"
+         sodipodi:rx="4.7982244"
+         sodipodi:ry="5.0507627"
+         d="m 80.812201,636.68439 c 0,2.78946 -2.148238,5.05076 -4.798224,5.05076 -2.649986,0 -4.798224,-2.2613 -4.798224,-5.05076 0,-2.78946 2.148238,-5.05077 4.798224,-5.05077 2.649986,0 4.798224,2.26131 4.798224,5.05077 z"
+         transform="translate(93.802971,-29.860751)"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         inkscape:export-xdpi="240"
+         inkscape:export-ydpi="240" />
+      <g
+         transform="translate(-17.714286,-1.0714285)"
+         id="g8250">
+        <g
+           id="g8245">
+          <g
+             id="g8241">
+            <text
+               inkscape:export-ydpi="240"
+               inkscape:export-xdpi="240"
+               inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+               sodipodi:linespacing="125%"
+               id="text4318-7-0-4-4-6-4"
+               y="610.38702"
+               x="185.50836"
+               style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.91267305;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+               xml:space="preserve"><tspan
+                 style="font-weight:bold"
+                 y="610.38702"
+                 x="185.50836"
+                 id="tspan4320-0-04-9-7-5-8"
+                 sodipodi:role="line">3</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       inkscape:export-ydpi="240"
+       inkscape:export-xdpi="240"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       transform="translate(147.73482,9.091399)"
+       d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+       sodipodi:ry="5.0507627"
+       sodipodi:rx="4.7982244"
+       sodipodi:cy="636.68439"
+       sodipodi:cx="76.013977"
+       id="path4316-8-3-9-5-3-6-8"
+       style="opacity:0.97000002;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:0.54222221;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc" />
+    <g
+       transform="translate(35.860424,37.880719)"
+       style="opacity:0.97000002"
+       id="g8250-8"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <g
+         id="g8245-5">
+        <g
+           id="g8241-0">
+          <text
+             xml:space="preserve"
+             style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.91267305;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             x="185.50836"
+             y="610.38702"
+             id="text4318-7-0-4-4-6-4-96"
+             sodipodi:linespacing="125%"
+             inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+             inkscape:export-xdpi="240"
+             inkscape:export-ydpi="240"><tspan
+               sodipodi:role="line"
+               id="tspan4320-0-04-9-7-5-8-3"
+               x="185.50836"
+               y="610.38702"
+               style="font-weight:bold">5</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       transform="translate(-391.42857,-23.392858)"
+       style="opacity:0.97000002"
+       id="g8402"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <g
+         transform="translate(391.37759,23.729257)"
+         id="g8334-8"
+         style="opacity:0.97000002">
+        <path
+           inkscape:export-ydpi="240"
+           inkscape:export-xdpi="240"
+           inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+           transform="translate(74.751289,9.0913986)"
+           d="m 80.812201,636.68439 c 0,2.78946 -2.148238,5.05076 -4.798224,5.05076 -2.649986,0 -4.798224,-2.2613 -4.798224,-5.05076 0,-2.78946 2.148238,-5.05077 4.798224,-5.05077 2.649986,0 4.798224,2.26131 4.798224,5.05077 z"
+           sodipodi:ry="5.0507627"
+           sodipodi:rx="4.7982244"
+           sodipodi:cy="636.68439"
+           sodipodi:cx="76.013977"
+           id="path4316-8-3-9-5-3-6-1-5"
+           style="opacity:0.97000002;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:0.54222221;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+        <g
+           transform="translate(-37.12311,37.880719)"
+           id="g8245-9-6"
+           style="opacity:0.97000002">
+          <g
+             id="g8241-3-1">
+            <text
+               inkscape:export-ydpi="240"
+               inkscape:export-xdpi="240"
+               inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+               sodipodi:linespacing="125%"
+               id="text4318-7-0-4-4-6-4-9-1"
+               y="610.38702"
+               x="185.50836"
+               style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.91267305;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+               xml:space="preserve"><tspan
+                 style="font-weight:bold"
+                 y="610.38702"
+                 x="185.50836"
+                 id="tspan4320-0-04-9-7-5-8-0-5"
+                 sodipodi:role="line">4</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path
+       style="opacity:0.94090002;fill:none;stroke:#800000;stroke-width:0.99900001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow2Mstart-1)"
+       d="m 188.5813,522.35103 0,94.94077"
+       id="path7479-7-4"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240" />
+    <g
+       transform="translate(-354.40954,-95.851705)"
+       style="opacity:0.97000002"
+       id="g8410"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <g
+         transform="translate(392.09187,58.729256)"
+         id="g8334-9"
+         style="opacity:0.97000002">
+        <path
+           inkscape:export-ydpi="240"
+           inkscape:export-xdpi="240"
+           inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+           transform="translate(74.877558,9.0913986)"
+           d="m 80.812201,636.68439 a 4.7982244,5.0507627 0 1 1 -9.596448,0 4.7982244,5.0507627 0 1 1 9.596448,0 z"
+           sodipodi:ry="5.0507627"
+           sodipodi:rx="4.7982244"
+           sodipodi:cy="636.68439"
+           sodipodi:cx="76.013977"
+           id="path4316-8-3-9-5-3-6-1-8"
+           style="opacity:0.97000002;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.41732287;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:0.54222221;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           sodipodi:type="arc" />
+        <g
+           transform="translate(-37.12311,37.880719)"
+           id="g8245-9-4"
+           style="opacity:0.97000002">
+          <g
+             id="g8241-3-8"
+             transform="translate(-0.25253813,-0.12626907)">
+            <text
+               inkscape:export-ydpi="240"
+               inkscape:export-xdpi="240"
+               inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+               sodipodi:linespacing="125%"
+               id="text4318-7-0-4-4-6-4-9-10"
+               y="610.38702"
+               x="185.50836"
+               style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.91267305;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+               xml:space="preserve"><tspan
+                 style="font-weight:bold"
+                 y="610.38702"
+                 x="185.50836"
+                 id="tspan4320-0-04-9-7-5-8-0-3"
+                 sodipodi:role="line">6</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g8787"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240">
+      <rect
+         style="opacity:0.94090002;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect2985-3-7-2-3-3-9-9-1"
+         width="36.623104"
+         height="37.821442"
+         x="169.53621"
+         y="555.14423"
+         ry="0.79545659" />
+      <g
+         inkscape:export-ydpi="240"
+         inkscape:export-xdpi="240"
+         inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/vchain_proc.png"
+         transform="translate(-179.96043,307.37846)"
+         id="g3965-9-0-2-4"
+         style="opacity:0.88529286">
+        <rect
+           style="fill:#efe8c5;fill-opacity:0.54342232;stroke:#000000;stroke-width:1.35747862;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect2985-3-7-2-3-3-9-9"
+           width="36.623104"
+           height="37.821442"
+           x="349.63647"
+           y="247.80531"
+           ry="0.79545659" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 355,254.36218 25,0"
+           id="path3957-6-6-3-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 355,262.36218 25,0"
+           id="path3959-0-1-1-0"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 355,270.36218 25,0"
+           id="path3961-6-0-9-6"
+           inkscape:connector-curvature="0" />
+        <path
+           style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 355,277.8368 25,0"
+           id="path3963-2-6-4-8"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         transform="translate(-135.81753,2.6541439)"
+         style="opacity:0.91267305"
+         id="g7187">
+        <rect
+           ry="0.86074471"
+           y="577.93683"
+           x="323.74808"
+           height="10.29278"
+           width="15.54269"
+           id="rect6755-71"
+           style="opacity:0.94090002;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.65688366;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+        <g
+           transform="translate(127.40009,-36.651237)"
+           id="g7096"
+           style="opacity:0.97000002">
+          <text
+             sodipodi:linespacing="125%"
+             id="text4013-1-4-6-6"
+             y="622.25281"
+             x="198.19632"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.94090002;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             xml:space="preserve"><tspan
+               style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+               y="622.25281"
+               x="198.19632"
+               id="tspan4015-8-7-3-6"
+               sodipodi:role="line">A</tspan></text>
+          <text
+             sodipodi:linespacing="125%"
+             id="text4013-1-2-6-6-5"
+             y="622.27313"
+             x="204.83783"
+             style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.91267305;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+             xml:space="preserve"><tspan
+               style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+               y="622.27313"
+               x="204.83783"
+               id="tspan4015-8-0-9-1-0"
+               sodipodi:role="line">C</tspan></text>
+        </g>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;opacity:0.88529286;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L"
+       x="197.33772"
+       y="601.66736"
+       id="text4013-2-84-9-9"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/gaia/Documents/workspace/IC3/virtual-channels/docs/images/coop_channel_close.png"
+       inkscape:export-xdpi="240"
+       inkscape:export-ydpi="240"><tspan
+         sodipodi:role="line"
+         id="tspan4015-0-5-4-7"
+         x="197.33772"
+         y="601.66736"
+         style="font-size:9px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Nimbus Mono L;-inkscape-font-specification:Nimbus Mono L">tPC.sol</tspan></text>
+  </g>
+</svg>
