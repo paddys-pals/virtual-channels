@@ -8,12 +8,6 @@ contract Splitter {
     bytes32 s;
   }
   
-  function recoverSigner(
-    bytes32 digest, Signature memory sig
-  ) internal pure returns (address) {
-    return ecrecover(digest, sig.v, sig.r, sig.s);
-  }
-
   address payable participants;
   address payable intermediary; 
   uint256 collateral;
@@ -26,15 +20,17 @@ contract Splitter {
     intermediary = addresses[1];
   }
   
-   function deposit () payable {
-        if msg.value != collateral {
-           // error
+   function deposit () payable public {
+        if (msg.value < collateral) {
+           require(false, "Insufficient collateral");
+        } else if (msg.value > collateral) {
+           require(false, "Too much collateral");
         }
-        if deposit == 0 {
-            deposit = msg.value
+        if (received == 0) {
+            received = msg.value;
             participants.transfer(collateral);
         } else {
-            intermediary.transfer(collateral)
+            intermediary.transfer(collateral);
         }
    }
    
