@@ -14,12 +14,18 @@ contract TwoPartyDirectChannel {
     bytes32 s;
   }
 
+  /*
+  These variables are set at contract deploy time and then never changed.
+  */
   address payable[2] participants;
+  uint256 finalizePeriod;
+
+  /*
+  These variables are changed during the dispute period
+  */
   uint256 public finalizesAt;
   State latestState;
-
   bool[2] hasDeposited;
-  uint256 finalizePeriod;
 
   constructor (
     address payable[2] memory _participants, uint256 _finalizePeriod
