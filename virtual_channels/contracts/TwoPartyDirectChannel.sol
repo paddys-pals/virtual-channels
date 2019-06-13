@@ -9,8 +9,8 @@ contract TwoPartyDirectChannel {
   }
 
   struct Signature {
-    bytes32 r;
     uint8 v;
+    bytes32 r;
     bytes32 s;
   }
 
@@ -28,8 +28,16 @@ contract TwoPartyDirectChannel {
     finalizePeriod = _finalizePeriod;
   }
 
-  function setState (
-    State memory newState, Signature[2] memory signatures
+  // FIXME: should use `Struct` whenever possible
+  function setStateWithoutStruct (
+    uint256[2] memory balances,
+    uint256 version,
+    uint8 v0,
+    bytes32 r0,
+    bytes32 s0,
+    uint8 v1,
+    bytes32 r1,
+    bytes32 s1
   ) public {
     /*
     1. check that newState is more recent than latestState
@@ -38,6 +46,7 @@ contract TwoPartyDirectChannel {
     4. if this function has never been called before, set finalizesAt
     5. set latestState to newState
     */
+    State memory newState = State(balances, version);
     require(
       hasDeposited[0] && hasDeposited[1],
       "`latestState` can be changed only after both sides have deposited"
@@ -48,16 +57,24 @@ contract TwoPartyDirectChannel {
       "`newState.version` should be larger than `latestState.version`"
     );
 
-    bytes32 digest = keccak256(abi.encode(newState));
-    address address0 = recoverSigner(digest, signatures[0]);
-    address address1 = recoverSigner(digest, signatures[1]);
+    bytes32 digest = makeDigest(newState);
+    address address0 = recoverSignerWithoutStruct(digest, v0, r0, s0);
+    address address1 = recoverSignerWithoutStruct(digest, v1, r1, s1);
     require(address0 == participants[0], "`signatures[0]` does not match `accounts[0]`");
     require(address1 == participants[1], "`signatures[1]` does not match `accounts[1]`");
 
     if (finalizesAt != 0) {
-      require(finalizesAt <= block.number, "Has finalized");
+      require(finalizesAt > block.number, "Has finalized");
     }
     latestState = newState;
+  }
+
+  function makeDigest(
+    State memory state
+  ) public pure returns (bytes32) {
+    return keccak256(
+      abi.encode(state.balances[0], state.balances[1], state.version)
+    );
   }
 
   function finalize() public {
@@ -65,7 +82,8 @@ contract TwoPartyDirectChannel {
     1. check that channel is finalized
     2. transfer money based on latestState
     */
-    require(finalizesAt > block.number, "Hasn't finalized");
+    require(finalizesAt != 0, "`finalizesAt` hasn't been set");
+    require(finalizesAt <= block.number, "Hasn't finalized");
     participants[0].transfer(latestState.balances[0]);
     participants[1].transfer(latestState.balances[1]);
   }
@@ -101,10 +119,14 @@ contract TwoPartyDirectChannel {
     }
   }
 
-  function recoverSigner(
-    bytes32 digest, Signature memory sig
+  // FIXME: should use `Struct` whenever possible
+  function recoverSignerWithoutStruct(
+    bytes32 digest,
+    uint8 v,
+    bytes32 r,
+    bytes32 s
   ) internal pure returns (address) {
-    return ecrecover(digest, sig.v, sig.r, sig.s);
+    return ecrecover(digest, v, r, s);
   }
 
 }
