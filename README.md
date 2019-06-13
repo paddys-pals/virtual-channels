@@ -5,6 +5,7 @@ Consider the following scenario. Alice and Charlie enter into a contract with a 
 
 The result of these agreements creates a virtual chain composed of two virtual channels with actors Alice, Charlie and intermediary Bob.
 
+
 <center>
 <img src="docs/images/overview.png">
 <br></br>
@@ -12,10 +13,10 @@ The result of these agreements creates a virtual chain composed of two virtual c
 
 We define the following four protocols:
 
-  1. Virtual channel establishment
+  1. Channel establishment
   2. Offchain transactions
   3. Ejections/Evictions
-  4. (Un)Cooperative channel closure
+  4. Channel closure
 
 ### Channel establishment
 
@@ -26,7 +27,7 @@ Establishing a virtual chain has the following sub components.
     <center>
     <img src="docs/images/vchain_proc.png">
     </center>
-    <br></br>
+
 
 The actors Alice, Charlie follow the following procedure :
   1. Contract Audit
