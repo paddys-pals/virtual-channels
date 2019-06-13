@@ -1,5 +1,6 @@
 # Virtual-channels
 
+
 Consider the following scenario. Alice and Charlie enter into a contract with a single intermediary Bob. Alice locks up amount **a<sub>0</sub>**, similarly, Charlie locks up amount **c<sub>0</sub>**. The channels total collateral can be assigned to variable **k** where, **k = a<sub>0</sub> + c<sub>0</sub>**. Bob, an intermediary actor, offers to lock up funds **b<sub>0</sub>** in exchange for some specified return **r**.
 
 The result of these agreements creates a virtual chain composed of two virtual channels with actors Alice, Charlie and intermediary Bob.
