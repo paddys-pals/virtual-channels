@@ -25,7 +25,8 @@ contract TwoPartyDirectChannel {
   */
   uint256 public finalizesAt;
   State latestState;
-  bool[2] hasDeposited;
+
+  uint256 finalizePeriod;
 
   constructor (
     address payable[2] memory _participants, uint256 _finalizePeriod
@@ -53,10 +54,6 @@ contract TwoPartyDirectChannel {
     5. set latestState to newState
     */
     State memory newState = State(balances, version);
-    require(
-      hasDeposited[0] && hasDeposited[1],
-      "`latestState` can be changed only after both sides have deposited"
-    );
 
     require(
       newState.version > latestState.version,
@@ -71,6 +68,8 @@ contract TwoPartyDirectChannel {
 
     if (finalizesAt != 0) {
       require(finalizesAt > block.number, "Has finalized");
+    } else {
+      finalizesAt = block.number + finalizePeriod;
     }
     latestState = newState;
   }
@@ -96,33 +95,6 @@ contract TwoPartyDirectChannel {
 
   // fallback function
   function () external payable {
-    uint index;
-    if (msg.sender == participants[0]) {
-      index = 0;
-    } else if (msg.sender == participants[1]) {
-      index = 1;
-    } else {
-      require(false, "Deposit from non-participants");
-    }
-    if (hasDeposited[index]) {
-      require(false, "The participant has deposited before");
-    }
-    latestState.balances[index] = msg.value;
-    hasDeposited[index] = true;
-  }
-
-  function startExitFromDeposit() public {
-    require(
-      hasDeposited[0] && hasDeposited[1],
-      "`startExitFromDeposit` should only be called after both deposits are done"
-    );
-    require(
-      msg.sender == participants[0] || msg.sender == participants[1],
-      "Non-participants are banned from calling this `startExitFromDeposit`"
-    );
-    if (finalizesAt == 0) {
-      finalizesAt = block.number + finalizePeriod;
-    }
   }
 
   // FIXME: should use `Struct` whenever possible

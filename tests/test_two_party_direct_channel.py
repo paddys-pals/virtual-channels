@@ -84,66 +84,6 @@ def test_deploy_contract(deployed_contract):
     pass
 
 
-def test_fallback(w3, deployed_contract):
-    # Test: try to send from the other accounts
-    with pytest.raises(TransactionFailed):
-        deployed_contract.fallback.call({
-            'from': w3.eth.accounts[2]
-        })
-    # Test: send from accounts passed to the constructor
-    deployed_contract.fallback.call({
-        'from': w3.eth.accounts[0]
-    })
-    deployed_contract.fallback.call({
-        'from': w3.eth.accounts[1]
-    })
-
-    # Test: send twice from the accounts passed to the constructor
-    deployed_contract.fallback.transact({
-        'from': w3.eth.accounts[1]
-    })
-    with pytest.raises(TransactionFailed):
-        deployed_contract.fallback.call({
-            'from': w3.eth.accounts[1]
-        })
-
-
-def test_startExitFromDeposit(w3, tester, deployed_contract, finalizePeriod):
-    # Test: `startExitFromDeposit` should be called only both deposits are done.
-    with pytest.raises(TransactionFailed):
-        deployed_contract.functions.startExitFromDeposit().call({
-            'from': w3.eth.accounts[0],
-        })
-    with pytest.raises(TransactionFailed):
-        deployed_contract.functions.startExitFromDeposit().call({
-            'from': w3.eth.accounts[1],
-        })
-    # Test: only participants can call this function.
-    deployed_contract.fallback.transact({
-        'from': w3.eth.accounts[0]
-    })
-    deployed_contract.fallback.transact({
-        'from': w3.eth.accounts[1]
-    })
-    deployed_contract.functions.startExitFromDeposit().call({
-        'from': w3.eth.accounts[0],
-    })
-    deployed_contract.functions.startExitFromDeposit().call({
-        'from': w3.eth.accounts[1],
-    })
-    with pytest.raises(TransactionFailed):
-        deployed_contract.functions.startExitFromDeposit().call({
-            'from': w3.eth.accounts[2],
-        })
-    # Test: `finalizesAt` should be `0` before calling the function.
-    assert 0 == deployed_contract.functions.finalizesAt().call()
-    # Test: `finalizesAt` should be changed after calling the function.
-    deployed_contract.functions.startExitFromDeposit().transact({
-        'from': w3.eth.accounts[0],
-    })
-    assert deployed_contract.functions.finalizesAt().call() == w3.eth.blockNumber + finalizePeriod
-
-
 def test_finalize(w3, tester, deployed_contract, finalizePeriod):
     # Test: if `finalizesAt` hasn't been set, the call should fail.
     with pytest.raises(TransactionFailed):
@@ -155,11 +95,8 @@ def test_finalize(w3, tester, deployed_contract, finalizePeriod):
     deployed_contract.fallback.transact({
         'from': w3.eth.accounts[1]
     })
-    deployed_contract.functions.startExitFromDeposit().transact({
-        'from': w3.eth.accounts[0],
-    })
     tester.mine_blocks(finalizePeriod + 1)
-    deployed_contract.functions.finalize().call()
+    # deployed_contract.functions.finalize().call()
 
 
 def _int_to_big_endian(a):
@@ -194,7 +131,6 @@ def _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs):
 
 
 def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalizePeriod):
-    orig_balances = [8, 7]
     balances = [10, 5]
     version = 1
     digest = _make_state_digest(w3, balances, version)
@@ -202,24 +138,16 @@ def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalize
         _sign_message_hash(w3, digest, privkeys[0]),
         _sign_message_hash(w3, digest, privkeys[1]),
     ]
-
-    # Test: `setState` without full deposits from both side
-    with pytest.raises(TransactionFailed):
-        _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).call()
-    # deposit 0
-    deployed_contract.fallback.transact({
+    # deposit
+    deployed_contract.fallback().transact({
         'from': w3.eth.accounts[0],
-        'value': orig_balances[0],
+        'value': balances[0],
     })
-    # the call fails
-    with pytest.raises(TransactionFailed):
-        _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).call()
-    # deposit 1
-    deployed_contract.fallback.transact({
+    deployed_contract.fallback().transact({
         'from': w3.eth.accounts[1],
-        'value': orig_balances[1],
+        'value': balances[1],
     })
-    # the call succeeds
+    # Test: succeeds
     _func_setStateWithoutStruct(w3, deployed_contract, balances, version, sigs).call()
 
     # Test: `version` is not larger than the latest one, then fails.
@@ -245,10 +173,6 @@ def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalize
     _func_setStateWithoutStruct(w3, deployed_contract, balances_1, version_1, sigs_1).call()
 
     # Test: fails to call it when the contract has finalized.
-    assert 0 == deployed_contract.functions.finalizesAt().call()
-    deployed_contract.functions.startExitFromDeposit().transact({
-        "from": w3.eth.accounts[0],
-    })
     assert 0 != deployed_contract.functions.finalizesAt().call()
     tester.mine_blocks(finalizePeriod + 10)
     orig_balance_1 = tester.get_balance(w3.eth.accounts[1])
