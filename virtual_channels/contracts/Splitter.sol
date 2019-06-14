@@ -2,25 +2,36 @@ pragma solidity >=0.4.22 <0.6.0;
 
 contract Splitter {
 
-  address payable participants;
-  address payable intermediary;
+  /*
+    A -- I -- B
+  */
+
+  /*
+  These variables are set at contract deploy time and then never changed.
+  */
+  address payable abAddress;
+  address payable intermediaryAddress;
   uint256 collateral;
+
+  // This variable is set after the first thing is received
   uint256 received;
 
   constructor (
-    address payable[2] memory addresses
+    address payable[2] memory addresses,
+    uint256 _collateral
   ) public {
-    participants = addresses[0];
-    intermediary = addresses[1];
+    abAddress = addresses[0];
+    intermediaryAddress = addresses[1];
+    collateral = _collateral;
   }
 
    function deposit () payable public {
     require(msg.value == collateral, "Received unexpected msg.value");
     if (received == 0) {
       received = msg.value;
-      participants.transfer(collateral);
+      abAddress.transfer(collateral);
     } else {
-      intermediary.transfer(collateral);
+      intermediaryAddress.transfer(collateral);
     }
   }
 
