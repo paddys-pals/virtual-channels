@@ -26,8 +26,6 @@ contract TwoPartyDirectChannel {
   uint256 public finalizesAt;
   State latestState;
 
-  uint256 finalizePeriod;
-
   constructor (
     address payable[2] memory _participants, uint256 _finalizePeriod
   ) public {
