@@ -5,6 +5,8 @@ contract TwoPartyDirectChannel {
 
   struct State {
     uint256[2] balances;
+    uint256 balanceSplitter;
+    address splitter;
     uint256 version;
   }
 
@@ -36,6 +38,8 @@ contract TwoPartyDirectChannel {
   // FIXME: should use `Struct` whenever possible
   function setStateWithoutStruct (
     uint256[2] memory balances,
+    uint256 balanceSplitter,
+    address splitter,
     uint256 version,
     uint8 v0,
     bytes32 r0,
@@ -51,7 +55,7 @@ contract TwoPartyDirectChannel {
     4. if this function has never been called before, set finalizesAt
     5. set latestState to newState
     */
-    State memory newState = State(balances, version);
+    State memory newState = State(balances, balanceSplitter, splitter, version);
 
     require(
       newState.version > latestState.version,
@@ -76,7 +80,12 @@ contract TwoPartyDirectChannel {
     State memory state
   ) public pure returns (bytes32) {
     return keccak256(
-      abi.encode(state.balances[0], state.balances[1], state.version)
+      abi.encodePacked(
+        state.balances,
+        state.balanceSplitter,
+        state.splitter,
+        state.version
+      )
     );
   }
 
@@ -101,7 +110,7 @@ contract TwoPartyDirectChannel {
     uint8 v,
     bytes32 r,
     bytes32 s
-  ) internal pure returns (address) {
+  ) public pure returns (address) {
     return ecrecover(digest, v, r, s);
   }
 
