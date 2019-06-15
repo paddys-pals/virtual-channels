@@ -26,7 +26,7 @@ contract Splitter {
     collateral = _collateral;
   }
 
-   function deposit () payable public {
+  function deposit() public payable {
     require(msg.value == collateral, "Received unexpected msg.value");
     if (received == 0) {
       received = msg.value;

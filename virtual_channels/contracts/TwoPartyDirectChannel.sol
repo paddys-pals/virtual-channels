@@ -1,10 +1,14 @@
 pragma solidity 0.5.0;
 pragma experimental "ABIEncoderV2";
 
+import "./Splitter.sol";
+
 contract TwoPartyDirectChannel {
 
   struct State {
     uint256[2] balances;
+    uint256 balanceSplitter;
+    address payable splitter;
     uint256 version;
   }
 
@@ -25,7 +29,6 @@ contract TwoPartyDirectChannel {
   */
   uint256 public finalizesAt;
   State latestState;
-  bool[2] hasDeposited;
 
   constructor (
     address payable[2] memory _participants, uint256 _finalizePeriod
@@ -37,6 +40,8 @@ contract TwoPartyDirectChannel {
   // FIXME: should use `Struct` whenever possible
   function setStateWithoutStruct (
     uint256[2] memory balances,
+    uint256 balanceSplitter,
+    address payable splitter,
     uint256 version,
     uint8 v0,
     bytes32 r0,
@@ -52,11 +57,7 @@ contract TwoPartyDirectChannel {
     4. if this function has never been called before, set finalizesAt
     5. set latestState to newState
     */
-    State memory newState = State(balances, version);
-    require(
-      hasDeposited[0] && hasDeposited[1],
-      "`latestState` can be changed only after both sides have deposited"
-    );
+    State memory newState = State(balances, balanceSplitter, splitter, version);
 
     require(
       newState.version > latestState.version,
@@ -71,6 +72,8 @@ contract TwoPartyDirectChannel {
 
     if (finalizesAt != 0) {
       require(finalizesAt > block.number, "Has finalized");
+    } else {
+      finalizesAt = block.number + finalizePeriod;
     }
     latestState = newState;
   }
@@ -79,7 +82,12 @@ contract TwoPartyDirectChannel {
     State memory state
   ) public pure returns (bytes32) {
     return keccak256(
-      abi.encode(state.balances[0], state.balances[1], state.version)
+      abi.encodePacked(
+        state.balances,
+        state.balanceSplitter,
+        state.splitter,
+        state.version
+      )
     );
   }
 
@@ -92,37 +100,15 @@ contract TwoPartyDirectChannel {
     require(finalizesAt <= block.number, "Hasn't finalized");
     participants[0].transfer(latestState.balances[0]);
     participants[1].transfer(latestState.balances[1]);
+    // Only transfer if `splitter` is set.
+    if (latestState.balanceSplitter != 0) {
+      Splitter splitter = Splitter(latestState.splitter);
+      splitter.deposit.value(latestState.balanceSplitter)();
+    }
   }
 
   // fallback function
   function () external payable {
-    uint index;
-    if (msg.sender == participants[0]) {
-      index = 0;
-    } else if (msg.sender == participants[1]) {
-      index = 1;
-    } else {
-      require(false, "Deposit from non-participants");
-    }
-    if (hasDeposited[index]) {
-      require(false, "The participant has deposited before");
-    }
-    latestState.balances[index] = msg.value;
-    hasDeposited[index] = true;
-  }
-
-  function startExitFromDeposit() public {
-    require(
-      hasDeposited[0] && hasDeposited[1],
-      "`startExitFromDeposit` should only be called after both deposits are done"
-    );
-    require(
-      msg.sender == participants[0] || msg.sender == participants[1],
-      "Non-participants are banned from calling this `startExitFromDeposit`"
-    );
-    if (finalizesAt == 0) {
-      finalizesAt = block.number + finalizePeriod;
-    }
   }
 
   // FIXME: should use `Struct` whenever possible
@@ -131,7 +117,7 @@ contract TwoPartyDirectChannel {
     uint8 v,
     bytes32 r,
     bytes32 s
-  ) internal pure returns (address) {
+  ) public pure returns (address) {
     return ecrecover(digest, v, r, s);
   }
 
