@@ -38,7 +38,12 @@ def privkeys(tester):
 
 @pytest.fixture
 def finalize_period():
-    return 10
+    return 15
+
+
+@pytest.fixture
+def splitter_finalize_period():
+    return 30
 
 
 @pytest.fixture("session")
@@ -75,6 +80,15 @@ def channel_12(w3, direct_channel_contract_info, finalize_period):
 
 
 @pytest.fixture
+def channel_23(w3, direct_channel_contract_info, finalize_period):
+    return deploy_contract(
+        w3,
+        *direct_channel_contract_info,
+        [[w3.eth.accounts[2], w3.eth.accounts[3]], finalize_period],
+    )
+
+
+@pytest.fixture
 def channel_02(w3, direct_channel_contract_info, finalize_period):
     return deploy_contract(
         w3,
@@ -107,50 +121,34 @@ def splitter_012(w3, splitter_contract_info, channel_02, collateral):
 
 
 @pytest.fixture
-def n_intermediaries():
-    return 2
-
-
-@pytest.fixture
-def multisplitter_n(
+def multisplitter_0123(
         w3,
         direct_channel_contract_info,
         multisplitter_contract_info,
-        n_intermediaries,
+        channel_01,
+        channel_12,
+        channel_23,
+        channel_03,
         collateral,
-        finalize_period):
-    # Assert we have enough accounts to set up that numbers of interdediaries.
-    assert len(w3.eth.accounts) >= n_intermediaries + 2
+        splitter_finalize_period):
     intermediaries_contracts_addresses = [
-        deploy_contract(
-            w3,
-            *direct_channel_contract_info,
-            [[w3.eth.accounts[i], w3.eth.accounts[i + 1]], finalize_period],
-        ).address
-        for i in range(n_intermediaries + 1)
+        channel_01.address,
+        channel_12.address,
+        channel_23.address,
     ]
     intermediaries_addresses = [
-        w3.eth.accounts[i + 1]
-        for i in range(n_intermediaries)
+        w3.eth.accounts[1],
+        w3.eth.accounts[2],
     ]
-    ab_channel = deploy_contract(
-        w3,
-        *direct_channel_contract_info,
-        [
-            [w3.eth.accounts[0], w3.eth.accounts[n_intermediaries + 1]],
-            finalize_period,
-        ],
-    )
-
     return deploy_contract(
         w3,
         *multisplitter_contract_info,
         [
-            n_intermediaries,
-            ab_channel.address,
+            2,
+            channel_03.address,
             collateral,
-            finalize_period,
+            splitter_finalize_period,
             intermediaries_contracts_addresses,
-            intermediaries_addresses
+            intermediaries_addresses,
         ],
     )

@@ -30,7 +30,6 @@ class ChannelState:
         return (self.balances, self.balance_splitter, self.address_splitter, self.version)
 
 
-
 def compile_contract(contract_path):
     out = subprocess.check_output([
         "solc",
@@ -94,3 +93,46 @@ def channel_setState(
         state.as_tuple(),
         sigs
     )
+
+
+def both_deposit_to_channel(w3, channel, dict_balances):
+    assert len(dict_balances) == 2
+    for index, value in dict_balances.items():
+        channel.fallback().transact({
+            'from': w3.eth.accounts[index],
+            'value': value,
+        })
+        channel.fallback().transact({
+            'from': w3.eth.accounts[index],
+            'value': value,
+        })
+
+
+def set_state_funds_to_splitter(
+        w3,
+        channel,
+        splitter,
+        dict_balances,
+        version,
+        privkeys):
+    assert len(dict_balances) == 2
+    keys = tuple(dict_balances.keys())
+    sum_balance = sum(dict_balances.values())
+    state = ChannelState(
+        balances=[0, 0],
+        balance_splitter=sum_balance,
+        address_splitter=splitter.address,
+        version=version,
+    )
+    digest = make_state_digest(w3, state)
+    sigs = [
+        sign_message_hash(w3, digest, privkeys[keys[0]]),
+        sign_message_hash(w3, digest, privkeys[keys[1]]),
+    ]
+    channel_setState(
+        channel,
+        state,
+        sigs,
+    ).transact({
+        'from': w3.eth.accounts[-1]
+    })

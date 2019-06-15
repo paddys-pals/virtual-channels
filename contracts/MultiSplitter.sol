@@ -29,7 +29,8 @@ contract MultiSplitter {
     address payable[] memory _intermediaries
   ) public {
     n = _n;
-    _duration = _duration;
+    duration = _duration;
+    collateral = _collateral;
     abChannelAddress = _abChannelAddress;
     intermediaries = _intermediaries;
     received = new bool[](n + 1);
@@ -40,13 +41,11 @@ contract MultiSplitter {
   }
 
   function deposit() public payable {
-    require(finalizesAt >= block.number, "Has finalized");
-    // XXX(mhchia): Why the value can be variable?
-    require(msg.value == collateral, "Insufficient collateral");
-
     if (finalizesAt == 0) {
       finalizesAt = block.number + duration;
     }
+    require(finalizesAt >= block.number, "Has finalized");
+    require(msg.value == collateral, "Insufficient collateral");
 
     require(intermediaryContractAddresses[msg.sender].isValue, "Address does not exist");
     received[intermediaryContractAddresses[msg.sender].value] = true;
