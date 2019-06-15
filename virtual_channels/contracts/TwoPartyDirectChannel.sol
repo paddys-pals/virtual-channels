@@ -1,12 +1,14 @@
 pragma solidity 0.5.0;
 pragma experimental "ABIEncoderV2";
 
+import "./Splitter.sol";
+
 contract TwoPartyDirectChannel {
 
   struct State {
     uint256[2] balances;
     uint256 balanceSplitter;
-    address splitter;
+    address payable splitter;
     uint256 version;
   }
 
@@ -39,7 +41,7 @@ contract TwoPartyDirectChannel {
   function setStateWithoutStruct (
     uint256[2] memory balances,
     uint256 balanceSplitter,
-    address splitter,
+    address payable splitter,
     uint256 version,
     uint8 v0,
     bytes32 r0,
@@ -98,6 +100,9 @@ contract TwoPartyDirectChannel {
     require(finalizesAt <= block.number, "Hasn't finalized");
     participants[0].transfer(latestState.balances[0]);
     participants[1].transfer(latestState.balances[1]);
+    // latestState.splitter.transfer(latestState.balanceSplitter);
+    Splitter splitter = Splitter(latestState.splitter);
+    splitter.deposit.value(latestState.balanceSplitter)();
   }
 
   // fallback function

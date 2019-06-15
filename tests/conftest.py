@@ -12,10 +12,12 @@ from web3.providers.eth_tester import (
 
 from .configs import (
     TWO_PARTY_DIRECT_CHANNEL_PATH,
+    SPLITTER_CHANNEL_PATH,
 )
 from .utils import (
     compile_contract,
-    deploy_contract,
+    deploy_direct_channel,
+    deploy_splitter,
 )
 
 
@@ -40,12 +42,59 @@ def finalize_period():
 
 
 @pytest.fixture("session")
-def channel_contract_info():
+def direct_channel_contract_info():
     return compile_contract(TWO_PARTY_DIRECT_CHANNEL_PATH)
 
 
+@pytest.fixture("session")
+def splitter_contract_info():
+    return compile_contract(SPLITTER_CHANNEL_PATH)
+
+
 @pytest.fixture
-def deployed_channel(w3, channel_contract_info, finalize_period):
-    abi, bytecode = channel_contract_info
-    ctor_args = [[w3.eth.accounts[0], w3.eth.accounts[1]], finalize_period]
-    return deploy_contract(w3, abi, bytecode, ctor_args)
+def channel_01(w3, direct_channel_contract_info, finalize_period):
+    return deploy_direct_channel(
+        w3,
+        direct_channel_contract_info,
+        w3.eth.accounts[0],
+        w3.eth.accounts[1],
+        finalize_period,
+    )
+
+
+@pytest.fixture
+def channel_12(w3, direct_channel_contract_info, finalize_period):
+    return deploy_direct_channel(
+        w3,
+        direct_channel_contract_info,
+        w3.eth.accounts[1],
+        w3.eth.accounts[2],
+        finalize_period,
+    )
+
+
+@pytest.fixture
+def channel_02(w3, direct_channel_contract_info, finalize_period):
+    return deploy_direct_channel(
+        w3,
+        direct_channel_contract_info,
+        w3.eth.accounts[0],
+        w3.eth.accounts[2],
+        finalize_period,
+    )
+
+
+@pytest.fixture
+def collateral():
+    return 5
+
+
+@pytest.fixture
+def splitter_012(w3, splitter_contract_info, channel_02, collateral):
+    return deploy_splitter(
+        w3,
+        splitter_contract_info,
+        channel_02.address,
+        w3.eth.accounts[1],
+        collateral,
+    )

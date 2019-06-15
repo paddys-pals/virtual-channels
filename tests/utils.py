@@ -1,5 +1,6 @@
 import copy
 import json
+import os.path
 import subprocess
 from typing import (
     List,
@@ -35,8 +36,10 @@ def compile_contract(contract_path):
     ])
     contract_json = json.loads(out.strip())["contracts"]
     # XXX: assume we only have one contract in the file
-    assert len(contract_json) == 1
-    contract = tuple(contract_json.values())[0]
+    # assert len(contract_json) == 1
+    contract_name = os.path.splitext(os.path.basename(str(contract_path)))[0]
+    key = f"{str(contract_path)}:{contract_name}"
+    contract = contract_json[key]
     return contract["abi"], contract["bin"]
 
 
@@ -45,12 +48,39 @@ def deploy_contract(w3, abi, bytecode, ctor_params):
         abi=abi,
         bytecode=bytecode,
     )
-    tx_hash = C.constructor(*ctor_params).transact()
+    tx_hash = C.constructor(*ctor_params).transact({
+        "from": w3.eth.accounts[-1]  # NOTE: paid by a non-relevant account
+    })
     tx_receipt = w3.eth.waitForTransactionReceipt(tx_hash)
     return w3.eth.contract(
         address=tx_receipt.contractAddress,
         abi=abi,
     )
+
+
+def deploy_direct_channel(
+        w3,
+        direct_channel_contract_info,
+        account_0,
+        account_1,
+        finalize_period):
+    abi, bytecode = direct_channel_contract_info
+    ctor_args = [[account_0, account_1], finalize_period]
+    return deploy_contract(w3, abi, bytecode, ctor_args)
+
+
+def deploy_splitter(
+        w3,
+        splitter_contract_info,
+        account_participants,
+        account_intermediary,
+        collateral):
+    abi, bytecode = splitter_contract_info
+    ctor_args = [
+        [account_participants, account_intermediary],
+        collateral,
+    ]
+    return deploy_contract(w3, abi, bytecode, ctor_args)
 
 
 def int_to_big_endian(a):
@@ -74,4 +104,23 @@ def make_state_digest(w3, state: ChannelState):
     return w3.soliditySha3(
         [t[0] for t in type_mapping],
         [t[1] for t in type_mapping]
+    )
+
+
+def channel_setStateWithoutStruct(
+        w3,
+        channel,
+        state,
+        sigs):
+    return channel.functions.setStateWithoutStruct(
+        state.balances,
+        state.balance_splitter,
+        state.address_splitter,
+        state.version,
+        sigs[0][0],
+        sigs[0][1],
+        sigs[0][2],
+        sigs[1][0],
+        sigs[1][1],
+        sigs[1][2],
     )
