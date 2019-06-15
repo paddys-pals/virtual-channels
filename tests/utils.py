@@ -26,6 +26,10 @@ class ChannelState:
                 setattr(new_state, key, value)
         return new_state
 
+    def as_tuple(self):
+        return (self.balances, self.balance_splitter, self.address_splitter, self.version)
+
+
 
 def compile_contract(contract_path):
     out = subprocess.check_output([
@@ -107,20 +111,13 @@ def make_state_digest(w3, state: ChannelState):
     )
 
 
-def channel_setStateWithoutStruct(
+def channel_setState(
         w3,
         channel,
         state,
         sigs):
-    return channel.functions.setStateWithoutStruct(
-        state.balances,
-        state.balance_splitter,
-        state.address_splitter,
-        state.version,
-        sigs[0][0],
-        sigs[0][1],
-        sigs[0][2],
-        sigs[1][0],
-        sigs[1][1],
-        sigs[1][2],
+    return channel.functions.setState(
+        state.as_tuple(),
+        sigs[0],
+        sigs[1]
     )

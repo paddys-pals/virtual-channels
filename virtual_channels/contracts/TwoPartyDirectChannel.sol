@@ -37,18 +37,10 @@ contract TwoPartyDirectChannel {
     finalizePeriod = _finalizePeriod;
   }
 
-  // FIXME: should use `Struct` whenever possible
-  function setStateWithoutStruct (
-    uint256[2] memory balances,
-    uint256 balanceSplitter,
-    address payable splitter,
-    uint256 version,
-    uint8 v0,
-    bytes32 r0,
-    bytes32 s0,
-    uint8 v1,
-    bytes32 r1,
-    bytes32 s1
+  function setState (
+    State memory newState,
+    Signature memory sig0,
+    Signature memory sig1
   ) public {
     /*
     1. check that newState is more recent than latestState
@@ -57,16 +49,14 @@ contract TwoPartyDirectChannel {
     4. if this function has never been called before, set finalizesAt
     5. set latestState to newState
     */
-    State memory newState = State(balances, balanceSplitter, splitter, version);
-
     require(
       newState.version > latestState.version,
       "`newState.version` should be larger than `latestState.version`"
     );
 
     bytes32 digest = makeDigest(newState);
-    address address0 = recoverSignerWithoutStruct(digest, v0, r0, s0);
-    address address1 = recoverSignerWithoutStruct(digest, v1, r1, s1);
+    address address0 = recoverSigner(digest, sig0);
+    address address1 = recoverSigner(digest, sig1);
     require(address0 == participants[0], "`signatures[0]` does not match `accounts[0]`");
     require(address1 == participants[1], "`signatures[1]` does not match `accounts[1]`");
 
@@ -111,14 +101,11 @@ contract TwoPartyDirectChannel {
   function () external payable {
   }
 
-  // FIXME: should use `Struct` whenever possible
-  function recoverSignerWithoutStruct(
+  function recoverSigner(
     bytes32 digest,
-    uint8 v,
-    bytes32 r,
-    bytes32 s
+    Signature memory signature
   ) public pure returns (address) {
-    return ecrecover(digest, v, r, s);
+    return ecrecover(digest, signature.v, signature.r, signature.s);
   }
 
 }
