@@ -100,9 +100,11 @@ contract TwoPartyDirectChannel {
     require(finalizesAt <= block.number, "Hasn't finalized");
     participants[0].transfer(latestState.balances[0]);
     participants[1].transfer(latestState.balances[1]);
-    // latestState.splitter.transfer(latestState.balanceSplitter);
-    Splitter splitter = Splitter(latestState.splitter);
-    splitter.deposit.value(latestState.balanceSplitter)();
+    // Only transfer if `splitter` is set.
+    if (latestState.balanceSplitter != 0) {
+      Splitter splitter = Splitter(latestState.splitter);
+      splitter.deposit.value(latestState.balanceSplitter)();
+    }
   }
 
   // fallback function

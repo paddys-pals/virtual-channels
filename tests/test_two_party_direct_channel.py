@@ -35,7 +35,13 @@ def test_finalize(w3, tester, channel_01, finalize_period):
     # channel_01.functions.finalize().call()
 
 
-def test_setStateWithoutStruct(w3, tester, channel_01, privkeys, finalize_period):
+def test_setStateWithoutStruct(
+        w3,
+        tester,
+        channel_01,
+        splitter_contract_info,
+        privkeys,
+        finalize_period):
     state = ChannelState(
         balances=[10, 5],
         balance_splitter=0,
