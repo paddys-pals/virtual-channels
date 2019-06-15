@@ -7,7 +7,7 @@ contract MultiSplitter {
   */
 
   struct id {
-    uint256 value;
+    uint value;
     bool isValue;
   }
 
