@@ -24,12 +24,17 @@ def test_splitter(
         finalize_period,
         collateral,
         privkeys):
-    # We get a chain of two `TwoPartyDirectChannel`s. Says, 0 <-> 1 <-> 2.
-    # Let `channel_01` = channel 0 <-> 1, and `channel_12` = channel 1 <-> 2.
+
+    # We get a chain of two `TwoPartyDirectChannel`s
+    #
+    # 0 ←────────────→ 1 ←──────────────→ 2
+    #         ↑                 ↑
+    #    channel_01         channel_12
 
     # First, we set up two channels respectively.
 
     # 0 and 1 deposits to `channel_01`
+
     balance_01 = [1, collateral - 1]
     channel_01.fallback().transact({
         'from': w3.eth.accounts[0],
