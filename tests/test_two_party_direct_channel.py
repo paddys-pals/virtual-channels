@@ -39,7 +39,7 @@ def test_finalize(w3, tester, channel_01, finalize_period):
     # channel_01.functions.finalize().call()
 
 
-def test_setStateWithoutStruct(
+def test_setState(
         w3,
         tester,
         channel_01,
