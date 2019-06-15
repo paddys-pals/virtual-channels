@@ -39,8 +39,7 @@ contract TwoPartyDirectChannel {
 
   function setState (
     State memory newState,
-    Signature memory sig0,
-    Signature memory sig1
+    Signature[2] memory sigs
   ) public {
     /*
     1. check that newState is more recent than latestState
@@ -55,8 +54,8 @@ contract TwoPartyDirectChannel {
     );
 
     bytes32 digest = makeDigest(newState);
-    address address0 = recoverSigner(digest, sig0);
-    address address1 = recoverSigner(digest, sig1);
+    address address0 = recoverSigner(digest, sigs[0]);
+    address address1 = recoverSigner(digest, sigs[1]);
     require(address0 == participants[0], "`signatures[0]` does not match `accounts[0]`");
     require(address1 == participants[1], "`signatures[1]` does not match `accounts[1]`");
 

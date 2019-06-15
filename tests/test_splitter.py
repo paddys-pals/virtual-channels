@@ -68,7 +68,6 @@ def test_splitter(
         sign_message_hash(w3, digest_01, privkeys[1]),
     ]
     channel_setState(
-        w3,
         channel_01,
         state_01_0,
         sigs_01,
@@ -88,7 +87,6 @@ def test_splitter(
         sign_message_hash(w3, digest_12, privkeys[2]),
     ]
     channel_setState(
-        w3,
         channel_12,
         state_12_0,
         sigs_12,

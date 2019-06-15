@@ -112,12 +112,10 @@ def make_state_digest(w3, state: ChannelState):
 
 
 def channel_setState(
-        w3,
         channel,
         state,
         sigs):
     return channel.functions.setState(
         state.as_tuple(),
-        sigs[0],
-        sigs[1]
+        sigs
     )

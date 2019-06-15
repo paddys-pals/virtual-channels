@@ -67,22 +67,22 @@ def test_setStateWithoutStruct(
         'value': state.balances[1],
     })
     # Test: succeeds
-    channel_setState(w3, channel_01, state, sigs).call()
+    channel_setState(channel_01, state, sigs).call()
 
     # Test: `version` is not larger than the latest one, then fails.
     state_older_version = state.copy(version=0)
     with pytest.raises(TransactionFailed):
-        channel_setState(w3, channel_01, state_older_version, sigs).call()
+        channel_setState(channel_01, state_older_version, sigs).call()
 
     # Test: wrong signatures
     sigs_copied = sigs.copy()
     # `v` set to 5
     sigs_copied[0] = (5, sigs_copied[0][1], sigs_copied[0][2])
     with pytest.raises(TransactionFailed):
-        channel_setState(w3, channel_01, state, sigs_copied).call()
+        channel_setState(channel_01, state, sigs_copied).call()
 
     # Test: change states
-    channel_setState(w3, channel_01, state, sigs).transact()
+    channel_setState(channel_01, state, sigs).transact()
     state_1 = ChannelState(
         balances=[6, 9],
         balance_splitter=0,
@@ -94,7 +94,7 @@ def test_setStateWithoutStruct(
         sign_message_hash(w3, digest_1, privkeys[0]),
         sign_message_hash(w3, digest_1, privkeys[1]),
     ]
-    channel_setState(w3, channel_01, state_1, sigs_1).call()
+    channel_setState(channel_01, state_1, sigs_1).call()
 
     # Test: fails to call it when the contract has finalized.
     assert 0 != channel_01.functions.finalizesAt().call()
@@ -102,7 +102,7 @@ def test_setStateWithoutStruct(
     orig_balance_1 = tester.get_balance(w3.eth.accounts[1])
     channel_01.functions.finalize().transact()
     with pytest.raises(TransactionFailed):
-        channel_setState(w3, channel_01, state_1, sigs_1).call()
+        channel_setState(channel_01, state_1, sigs_1).call()
     now_balance_1 = tester.get_balance(w3.eth.accounts[1])
     # Only check `balances[1]`, since `balances[0]` is changed after every transaction
     #   submitted by accounts[0].
