@@ -260,15 +260,14 @@ def test_setStateWithoutStruct(w3, tester, deployed_contract, privkeys, finalize
     #   submitted by accounts[0].
     assert (now_balance_1 - orig_balance_1) == balances[1]
 
-
-# def test_makeDigest(w3, deployed_contract):
-#     balances = [1, 2]
-#     version = 3
-#     result_solidity = deployed_contract.functions.makeDigest(
-#         balances, version
-#     ).call()
-#     result_w3 = _make_state_digest(w3, balances, version)
-#     assert result_solidity == result_w3
+def test_makeDigest(w3, deployed_contract):
+    balances = [1, 2]
+    version = 3
+    result_solidity = deployed_contract.functions.makeDigest(
+        (balances, version)
+    ).call()
+    result_w3 = _make_state_digest(w3, balances, version)
+    assert result_solidity == result_w3
 
 
 # def test_recoverSignerWithoutStruct(w3, deployed_contract, privkeys, accounts):
