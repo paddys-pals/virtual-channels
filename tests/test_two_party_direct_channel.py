@@ -11,6 +11,10 @@ from .utils import (
     sign_message_hash,
 )
 
+from .constants import (
+    EMPTY_ADDRESS
+)
+
 
 def test_compile(direct_channel_contract_info):
     pass
@@ -105,18 +109,18 @@ def test_setStateWithoutStruct(
     assert (now_balance_1 - orig_balance_1) == state.balances[1]
 
 # FIXME(mhchia): Clean up these debugging tests.
-# def test_makeDigest(w3, channel_01):
-#     state = ChannelState(
-#         balances=[1, 2],
-#         balance_splitter=0,
-#         address_splitter=EMPTY_ADDRESS,
-#         version=3,
-#     )
-#     result_solidity = channel_01.functions.makeDigestWithoutStruct(
-#         state.balances, state.balance_splitter, state.address_splitter, state.version,
-#     ).call()
-#     result_w3 = make_state_digest(w3, state)
-#     assert result_solidity == result_w3
+def test_makeDigest(w3, channel_01):
+    state = ChannelState(
+        balances=[1, 2],
+        balance_splitter=0,
+        address_splitter=EMPTY_ADDRESS,
+        version=3,
+    )
+    result_solidity = channel_01.functions.makeDigest(
+        (state.balances, state.balance_splitter, state.address_splitter, state.version)
+    ).call()
+    result_w3 = make_state_digest(w3, state)
+    assert result_solidity == result_w3
 
 
 # def test_recoverSignerWithoutStruct(w3, channel_01, privkeys):
