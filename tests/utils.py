@@ -62,31 +62,6 @@ def deploy_contract(w3, abi, bytecode, ctor_params):
     )
 
 
-def deploy_direct_channel(
-        w3,
-        direct_channel_contract_info,
-        account_0,
-        account_1,
-        finalize_period):
-    abi, bytecode = direct_channel_contract_info
-    ctor_args = [[account_0, account_1], finalize_period]
-    return deploy_contract(w3, abi, bytecode, ctor_args)
-
-
-def deploy_splitter(
-        w3,
-        splitter_contract_info,
-        account_participants,
-        account_intermediary,
-        collateral):
-    abi, bytecode = splitter_contract_info
-    ctor_args = [
-        [account_participants, account_intermediary],
-        collateral,
-    ]
-    return deploy_contract(w3, abi, bytecode, ctor_args)
-
-
 def int_to_big_endian(a):
     return a.to_bytes(32, 'big')
 
@@ -107,7 +82,7 @@ def make_state_digest(w3, state: ChannelState):
     ]
     return w3.soliditySha3(
         [t[0] for t in type_mapping],
-        [t[1] for t in type_mapping]
+        [t[1] for t in type_mapping],
     )
 
 
