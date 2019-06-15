@@ -1,34 +1,14 @@
-import copy
-
-from typing import (
-    List,
-)
-
 from eth_tester.exceptions import (
     TransactionFailed,
 )
 
 import pytest
 
-
-class State:
-    balances: List[int]  # uint256
-    balance_splitter: int  # uint256
-    address_splitter: bytes  # bytes32
-    version: int  # uint256
-
-    def __init__(self, balances, balance_splitter, address_splitter, version):
-        self.balances = balances
-        self.balance_splitter = balance_splitter
-        self.address_splitter = address_splitter
-        self.version = version
-
-    def copy(self, **kwargs):
-        new_state = copy.deepcopy(self)
-        for key, value in kwargs.items():
-            if key in self.__dict__:
-                setattr(new_state, key, value)
-        return new_state
+from .utils import (
+    ChannelState,
+    make_state_digest,
+    sign_message_hash,
+)
 
 
 def test_compile(channel_contract_info):
@@ -54,30 +34,6 @@ def test_finalize(w3, tester, deployed_channel, finalize_period):
     # deployed_channel.functions.finalize().call()
 
 
-def _int_to_big_endian(a):
-    return a.to_bytes(32, 'big')
-
-
-def _sign_message_hash(w3, message_hash, privkey):
-    signed_message = w3.eth.account.signHash(message_hash, privkey)
-    assert message_hash == signed_message['messageHash']
-    v, r, s = tuple(map(signed_message.get, ('v', 'r', 's')))
-    return v, _int_to_big_endian(r), _int_to_big_endian(s)
-
-
-def _make_state_digest(w3, state: State):
-    type_mapping = [
-        ('uint256[2]', state.balances),
-        ('uint256', state.balance_splitter),
-        ('address', state.address_splitter),
-        ('uint256', state.version),
-    ]
-    return w3.soliditySha3(
-        [t[0] for t in type_mapping],
-        [t[1] for t in type_mapping]
-    )
-
-
 def _func_setStateWithoutStruct(
         w3,
         deployed_channel,
@@ -99,16 +55,16 @@ def _func_setStateWithoutStruct(
 
 
 def test_setStateWithoutStruct(w3, tester, deployed_channel, privkeys, finalize_period):
-    state = State(
+    state = ChannelState(
         balances=[10, 5],
         balance_splitter=0,
         address_splitter=w3.eth.accounts[3],
         version=1,
     )
-    digest = _make_state_digest(w3, state)
+    digest = make_state_digest(w3, state)
     sigs = [
-        _sign_message_hash(w3, digest, privkeys[0]),
-        _sign_message_hash(w3, digest, privkeys[1]),
+        sign_message_hash(w3, digest, privkeys[0]),
+        sign_message_hash(w3, digest, privkeys[1]),
     ]
     # deposit
     deployed_channel.fallback().transact({
@@ -136,16 +92,16 @@ def test_setStateWithoutStruct(w3, tester, deployed_channel, privkeys, finalize_
 
     # Test: change states
     _func_setStateWithoutStruct(w3, deployed_channel, state, sigs).transact()
-    state_1 = State(
+    state_1 = ChannelState(
         balances=[6, 9],
         balance_splitter=0,
         address_splitter=w3.eth.accounts[3],
         version=2,
     )
-    digest_1 = _make_state_digest(w3, state_1)
+    digest_1 = make_state_digest(w3, state_1)
     sigs_1 = [
-        _sign_message_hash(w3, digest_1, privkeys[0]),
-        _sign_message_hash(w3, digest_1, privkeys[1]),
+        sign_message_hash(w3, digest_1, privkeys[0]),
+        sign_message_hash(w3, digest_1, privkeys[1]),
     ]
     _func_setStateWithoutStruct(w3, deployed_channel, state_1, sigs_1).call()
 
@@ -163,7 +119,7 @@ def test_setStateWithoutStruct(w3, tester, deployed_channel, privkeys, finalize_
 
 # FIXME(mhchia): Clean up these debugging tests.
 # def test_makeDigest(w3, deployed_channel):
-#     state = State(
+#     state = ChannelState(
 #         balances=[1, 2],
 #         balance_splitter=0,
 #         address_splitter=EMPTY_ADDRESS,
@@ -172,7 +128,7 @@ def test_setStateWithoutStruct(w3, tester, deployed_channel, privkeys, finalize_
 #     result_solidity = deployed_channel.functions.makeDigestWithoutStruct(
 #         state.balances, state.balance_splitter, state.address_splitter, state.version,
 #     ).call()
-#     result_w3 = _make_state_digest(w3, state)
+#     result_w3 = make_state_digest(w3, state)
 #     assert result_solidity == result_w3
 
 
@@ -181,7 +137,7 @@ def test_setStateWithoutStruct(w3, tester, deployed_channel, privkeys, finalize_
 #         ['bytes32', 'uint8', 'bytes32', 'bytes32'],
 #         [b'\x11' * 32, 2, b'\x33' * 32, b'\x44' * 32],
 #     )
-#     v, r, s = _sign_message_hash(w3, digest, privkeys[0])
+#     v, r, s = sign_message_hash(w3, digest, privkeys[0])
 #     addr = deployed_channel.functions.recoverSignerWithoutStruct(
 #         digest, v, r, s
 #     ).call()
