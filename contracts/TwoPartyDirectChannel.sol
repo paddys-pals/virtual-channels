@@ -1,6 +1,7 @@
 pragma solidity 0.5.0;
 pragma experimental "ABIEncoderV2";
 
+import "./Utils.sol";
 import "./Splitter.sol";
 
 contract TwoPartyDirectChannel {
@@ -10,12 +11,6 @@ contract TwoPartyDirectChannel {
     uint256 balanceSplitter;
     address payable splitter;
     uint256 version;
-  }
-
-  struct Signature {
-    uint8 v;
-    bytes32 r;
-    bytes32 s;
   }
 
   /*
@@ -39,7 +34,7 @@ contract TwoPartyDirectChannel {
 
   function setState (
     State memory newState,
-    Signature[2] memory sigs
+    Utils.Signature[2] memory sigs
   ) public {
     /*
     1. check that newState is more recent than latestState
@@ -102,7 +97,7 @@ contract TwoPartyDirectChannel {
 
   function recoverSigner(
     bytes32 digest,
-    Signature memory signature
+    Utils.Signature memory signature
   ) public pure returns (address) {
     return ecrecover(digest, signature.v, signature.r, signature.s);
   }

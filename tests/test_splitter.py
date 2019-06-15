@@ -4,6 +4,7 @@ from .utils import (
     channel_setState,
     make_state_digest,
     set_state_funds_to_splitter,
+    make_splitter_digest,
     sign_message_hash,
 )
 
@@ -44,7 +45,7 @@ def test_splitter(
 
     # Now, 1 wants to leave. It must do the following steps:
     #   - First, 1 must set up a `channel_02`.
-    #   - Second, 1 must deploy a `Splitter` contract.
+    #   - Second, 1 must deploy a `Splitter` contract, and make it a splitter
     # It is already done now.
     # Then, it must set new states in both `channel_01` and
     #   `channel_12`, moving the both funds to the `Splitter` contract.
@@ -64,6 +65,26 @@ def test_splitter(
         1,
         privkeys,
     )
+
+    digest_splitter = make_splitter_digest(w3, [
+        w3.eth.accounts[0],
+        w3.eth.accounts[1],
+        w3.eth.accounts[2],
+    ])
+    sigs_splitter = [
+        sign_message_hash(w3, digest_splitter, privkeys[0]),
+        sign_message_hash(w3, digest_splitter, privkeys[1]),
+        sign_message_hash(w3, digest_splitter, privkeys[2])
+    ]
+
+    splitter_012.functions.startBecomeSomething().transact({
+        'from': w3.eth.accounts[-1]
+    })
+    splitter_012.functions.becomeSplitter(
+        sigs_splitter
+    ).transact({
+        'from': w3.eth.accounts[-1]
+    })
 
     # Finally, finalize both `channel_01` and `channel_12`.
     orig_balance_1 = tester.get_balance(w3.eth.accounts[1])
