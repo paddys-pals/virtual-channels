@@ -9,6 +9,10 @@ from web3.providers.eth_tester import (
     EthereumTesterProvider,
 )
 
+from .constants import (
+    EMPTY_ADDRESS
+)
+
 
 from .configs import (
     TWO_PARTY_DIRECT_CHANNEL_PATH,
@@ -116,7 +120,10 @@ def splitter_012(w3, splitter_contract_info, channel_02, collateral):
     return deploy_contract(
         w3,
         *splitter_contract_info,
-        [[channel_02.address, w3.eth.accounts[1]], collateral],
+        [
+            [channel_02.address, w3.eth.accounts[1], EMPTY_ADDRESS, EMPTY_ADDRESS],
+            collateral, finalize_period()
+        ],
     )
 
 
