@@ -121,7 +121,7 @@ def splitter_012(w3, splitter_contract_info, channel_02, collateral):
         w3,
         *splitter_contract_info,
         [
-            [channel_02.address, w3.eth.accounts[1], EMPTY_ADDRESS, EMPTY_ADDRESS],
+            [channel_02.address, w3.eth.accounts[1], w3.eth.accounts[0], w3.eth.accounts[2]],
             collateral, finalize_period()
         ],
     )

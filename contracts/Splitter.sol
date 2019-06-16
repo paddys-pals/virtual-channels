@@ -79,7 +79,21 @@ contract Splitter {
         bAddress
       )
     );
+    address address0 = recoverSigner(digest, sigs[0]);
+    address address1 = recoverSigner(digest, sigs[1]);
+    address address2 = recoverSigner(digest, sigs[2]);
+    require(address0 == aAddress, "`signatures[0]` does not match `aAddress`");
+    require(address1 == intermediaryAddress, "`signatures[1]` does not match `intermediaryAddress`");
+    require(address2 == bAddress, "`signatures[2]` does not match `bAddress`");
+
     whoAmI = ContractState.SPLITTER;
+  }
+
+  function recoverSigner(
+    bytes32 digest,
+    Utils.Signature memory signature
+  ) public pure returns (address) {
+    return ecrecover(digest, signature.v, signature.r, signature.s);
   }
 
   function becomeRefunder() public {
