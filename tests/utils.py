@@ -30,7 +30,6 @@ class ChannelState:
         return (self.balances, self.balance_splitter, self.address_splitter, self.version)
 
 
-
 def compile_contract(contract_path):
     out = subprocess.check_output([
         "solc",
@@ -62,31 +61,6 @@ def deploy_contract(w3, abi, bytecode, ctor_params):
     )
 
 
-def deploy_direct_channel(
-        w3,
-        direct_channel_contract_info,
-        account_0,
-        account_1,
-        finalize_period):
-    abi, bytecode = direct_channel_contract_info
-    ctor_args = [[account_0, account_1], finalize_period]
-    return deploy_contract(w3, abi, bytecode, ctor_args)
-
-
-def deploy_splitter(
-        w3,
-        splitter_contract_info,
-        account_participants,
-        account_intermediary,
-        collateral):
-    abi, bytecode = splitter_contract_info
-    ctor_args = [
-        [account_participants, account_intermediary],
-        collateral,
-    ]
-    return deploy_contract(w3, abi, bytecode, ctor_args)
-
-
 def int_to_big_endian(a):
     return a.to_bytes(32, 'big')
 
@@ -107,7 +81,7 @@ def make_state_digest(w3, state: ChannelState):
     ]
     return w3.soliditySha3(
         [t[0] for t in type_mapping],
-        [t[1] for t in type_mapping]
+        [t[1] for t in type_mapping],
     )
 
 
@@ -119,3 +93,46 @@ def channel_setState(
         state.as_tuple(),
         sigs
     )
+
+
+def both_deposit_to_channel(w3, channel, dict_balances):
+    assert len(dict_balances) == 2
+    for index, value in dict_balances.items():
+        channel.fallback().transact({
+            'from': w3.eth.accounts[index],
+            'value': value,
+        })
+        channel.fallback().transact({
+            'from': w3.eth.accounts[index],
+            'value': value,
+        })
+
+
+def set_state_funds_to_splitter(
+        w3,
+        channel,
+        splitter,
+        dict_balances,
+        version,
+        privkeys):
+    assert len(dict_balances) == 2
+    keys = tuple(dict_balances.keys())
+    sum_balance = sum(dict_balances.values())
+    state = ChannelState(
+        balances=[0, 0],
+        balance_splitter=sum_balance,
+        address_splitter=splitter.address,
+        version=version,
+    )
+    digest = make_state_digest(w3, state)
+    sigs = [
+        sign_message_hash(w3, digest, privkeys[keys[0]]),
+        sign_message_hash(w3, digest, privkeys[keys[1]]),
+    ]
+    channel_setState(
+        channel,
+        state,
+        sigs,
+    ).transact({
+        'from': w3.eth.accounts[-1]
+    })
